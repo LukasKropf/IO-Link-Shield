@@ -1,0 +1,853 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:maxim
+LIBS:ESD_Protection
+LIBS:mechanical
+LIBS:myLib
+LIBS:dc-dc
+LIBS:diode
+LIBS:KiCad-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "Arduino IO-Link Master Shield"
+Date "2017-12-07"
+Rev "4"
+Comp "BFH-Ti Burgdorf, Kropl2"
+Comment1 "4) BMK angepasst, Jumper Boost korrekt hingesetzt"
+Comment2 "3) Buck Boost Converter abschaltbar gemacht (Jumper)"
+Comment3 "2) Buck Boost Converter automatische Umschaltung"
+Comment4 ""
+$EndDescr
+Text HLabel 900  1250 0    60   BiDi ~ 0
++5V
+Text HLabel 850  900  0    60   Input ~ 0
+24Vin
+$Comp
+L L L11
+U 1 1 59FB1A1F
+P 4400 1250
+F 0 "L11" H 4350 1250 50  0000 C CNN
+F 1 "47µH" V 4475 1250 50  0000 C CNN
+F 2 "EigeneFootprints:SRN6045" H 4400 1250 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/SRN6045.pdf" H 4400 1250 50  0001 C CNN
+F 4 "SRN6045-470M" H 4400 1250 60  0001 C CNN "part-num"
+F 5 "Bourns inc" H 4400 1250 60  0001 C CNN "manf"
+	1    4400 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R15
+U 1 1 59FB1E8D
+P 5850 1500
+F 0 "R15" V 5930 1500 50  0000 C CNN
+F 1 "200k" V 5850 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5780 1500 50  0001 C CNN
+F 3 "https://www.digikey.ch/products/de/resistors/chip-resistor-surface-mount/52?k=&pkeyword=&umin2085=200&umax2085=201&rfu2085=kOhms&FV=ffec1104%2Cfffc000d%2Cc0001%2C1c0002%2C400007%2Cffe00034&mnonly=0&ColumnSort=2085&page=1&stock=1&quantity=0&ptm=0&fid=0&pageSize=25" H 5850 1500 50  0001 C CNN
+F 4 "RC1206FR-07200KL" H 5850 1500 60  0001 C CNN "part-num"
+F 5 "Yageo" H 5850 1500 60  0001 C CNN "manf"
+	1    5850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 59FB1EE1
+P 5850 2350
+F 0 "R16" V 5930 2350 50  0000 C CNN
+F 1 "11k5" V 5850 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5780 2350 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/RC0805FR-0711K5L/311-11.5KCRCT-ND/730503" H 5850 2350 50  0001 C CNN
+F 4 "RC0805FR-0711K5L" H 5850 2350 60  0001 C CNN "part-num"
+F 5 "Yageo" H 5850 2350 60  0001 C CNN "manf"
+	1    5850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C11
+U 1 1 59FB1F78
+P 5200 2100
+F 0 "C11" H 5225 2200 50  0000 L CNN
+F 1 "150µF" H 5225 2000 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10.5" H 5238 1950 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/rubycon/35PEV150M8X10.5/35PEV150M8X10.5CT-ND/5777270" H 5200 2100 50  0001 C CNN
+F 4 "35PEV150M8X10.5" H 5200 2100 60  0001 C CNN "part-num"
+F 5 "Rubycon" H 5200 2100 60  0001 C CNN "manf"
+	1    5200 2100
+	1    0    0    -1  
+$EndComp
+Text HLabel 7650 900  2    60   Output ~ 0
+24Vout
+$Comp
+L GND #PWR011
+U 1 1 59FB298E
+P 5850 2650
+F 0 "#PWR011" H 5850 2400 50  0001 C CNN
+F 1 "GND" H 5850 2500 50  0000 C CNN
+F 2 "" H 5850 2650 50  0001 C CNN
+F 3 "" H 5850 2650 50  0001 C CNN
+	1    5850 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 1800 3300 0    60   ~ 0
+Boost-Converter
+Text Notes 1800 6400 0    60   ~ 0
+Buck-Converter
+$Comp
+L CP C21
+U 1 1 59FC4047
+P 5500 5150
+F 0 "C21" H 5525 5250 50  0000 L CNN
+F 1 "120µF" H 5525 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.7" H 5538 5000 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/nichicon/RSA1A121MCN1GS/493-7371-1-ND/3768638" H 5500 5150 50  0001 C CNN
+F 4 "RSA1A121MCN1GS" H 5500 5150 60  0001 C CNN "part-num"
+F 5 "Nichicon" H 5500 5150 60  0001 C CNN "manf"
+	1    5500 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 59FC7739
+P 5500 5550
+F 0 "#PWR012" H 5500 5300 50  0001 C CNN
+F 1 "GND" H 5500 5400 50  0000 C CNN
+F 2 "" H 5500 5550 50  0001 C CNN
+F 3 "" H 5500 5550 50  0001 C CNN
+	1    5500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L21
+U 1 1 59FC7EC7
+P 5100 4750
+F 0 "L21" H 5050 4750 50  0000 C CNN
+F 1 "47µH" V 5175 4750 50  0000 C CNN
+F 2 "EigeneFootprints:SRN6045" H 5100 4750 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/SRN6045.pdf" H 5100 4750 50  0001 C CNN
+F 4 "SRN6045-470M" H 5100 4750 60  0001 C CNN "part-num"
+F 5 "Bourns inc" H 5100 4750 60  0001 C CNN "manf"
+	1    5100 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MC34063 U10
+U 1 1 5A0CFF21
+P 3550 2050
+F 0 "U10" H 3550 2500 50  0000 C CNN
+F 1 "MC34063" H 3600 1600 50  0000 L CNN
+F 2 "SMD_Packages:SOIC-8-N" H 4050 2050 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/03/f9/c4/3d/7f/eb/4c/5e/CD00001232.pdf/files/CD00001232.pdf/jcr:content/translations/en.CD00001232.pdf" H 4050 2050 50  0001 C CNN
+F 4 "MC34063ACD-TR" H 3550 2050 60  0001 C CNN "part-num"
+F 5 "STMMicroelectronics" H 3550 2050 60  0001 C CNN "manf"
+	1    3550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5A0D0C4C
+P 4100 1600
+F 0 "R11" V 4180 1600 50  0000 C CNN
+F 1 "180" V 4100 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4030 1600 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/RC1206FR-07180RL/311-180FRCT-ND/731544" H 4100 1600 50  0001 C CNN
+F 4 "RC1206FR-07180RL" H 4100 1600 60  0001 C CNN "part-num"
+F 5 "Yageo" H 4100 1600 60  0001 C CNN "manf"
+	1    4100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5A0D1C63
+P 2900 1250
+F 0 "R10" V 2980 1250 50  0000 C CNN
+F 1 "0R330" V 2900 1250 39  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2830 1250 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/RC1206JR-070RL/311-0.0ERCT-ND/732131" H 2900 1250 50  0001 C CNN
+F 4 "ERJ-8RQFR33V" H 2900 1250 60  0001 C CNN "part-num"
+F 5 "Panasonic" H 2900 1250 60  0001 C CNN "manf"
+	1    2900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5A0D2D84
+P 4250 2650
+F 0 "#PWR013" H 4250 2400 50  0001 C CNN
+F 1 "GND" H 4250 2500 50  0000 C CNN
+F 2 "" H 4250 2650 50  0001 C CNN
+F 3 "" H 4250 2650 50  0001 C CNN
+	1    4250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5A0D3CCA
+P 3550 2650
+F 0 "#PWR014" H 3550 2400 50  0001 C CNN
+F 1 "GND" H 3550 2500 50  0000 C CNN
+F 2 "" H 3550 2650 50  0001 C CNN
+F 3 "" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D21
+U 1 1 5A0D492B
+P 4700 5250
+F 0 "D21" H 4700 5350 50  0000 C CNN
+F 1 "D_Schottky" H 4700 5150 50  0000 C CNN
+F 2 "EigeneFootprints:D_SMF_DO-219" H 4700 5250 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SL04-HE3-08/SL04-HE3-08CT-ND/3104495" H 4700 5250 50  0001 C CNN
+F 4 "SL04-HE3-08" H 4700 5250 60  0001 C CNN "part-num"
+F 5 "Vishay Semiconductor Diodes Division" H 4700 5250 60  0001 C CNN "manf"
+	1    4700 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C10
+U 1 1 5A0D6559
+P 2850 2500
+F 0 "C10" H 2875 2600 50  0000 L CNN
+F 1 "430pF" H 2875 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2888 2350 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM2165C1H431JA01-01.pdf" H 2850 2500 50  0001 C CNN
+F 4 "C0805C431J5GAC7800" H 2850 2500 60  0001 C CNN "part-num"
+F 5 "KEMET" H 2850 2500 60  0001 C CNN "manf"
+	1    2850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 5A0D662A
+P 2850 2700
+F 0 "#PWR015" H 2850 2450 50  0001 C CNN
+F 1 "GND" H 2850 2550 50  0000 C CNN
+F 2 "" H 2850 2700 50  0001 C CNN
+F 3 "" H 2850 2700 50  0001 C CNN
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+Text Label 7800 4750 2    59   ~ 0
+5Vint
+$Comp
+L MC34063 U20
+U 1 1 5A0E0181
+P 3750 4650
+F 0 "U20" H 3750 5100 50  0000 C CNN
+F 1 "MC34063" H 3800 4200 50  0000 L CNN
+F 2 "SMD_Packages:SOIC-8-N" H 4250 4650 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/03/f9/c4/3d/7f/eb/4c/5e/CD00001232.pdf/files/CD00001232.pdf/jcr:content/translations/en.CD00001232.pdf" H 4250 4650 50  0001 C CNN
+F 4 "MC34063ACD-TR" H 3750 4650 60  0001 C CNN "part-num"
+F 5 "STMMicroelectronics" H 3750 4650 60  0001 C CNN "manf"
+	1    3750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 5A0E3A28
+P 2900 4050
+F 0 "R20" V 2980 4050 50  0000 C CNN
+F 1 "0R25" V 2900 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2830 4050 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376" H 2900 4050 50  0001 C CNN
+F 4 "PT1206FR-070R25L" H 2900 4050 60  0001 C CNN "part-num"
+F 5 "Yageo" H 2900 4050 60  0001 C CNN "manf"
+	1    2900 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C20
+U 1 1 5A0E5E10
+P 3050 5100
+F 0 "C20" H 3075 5200 50  0000 L CNN
+F 1 "120pF" H 3075 5000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3088 4950 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/murata-electronics-north-america/GRM2165C1H121JA01D/490-9737-1-ND/4934913" H 3050 5100 50  0001 C CNN
+F 4 "GRM2165C1H121JA01D" H 3050 5100 60  0001 C CNN "part-num"
+F 5 "MuRata" H 3050 5100 60  0001 C CNN "manf"
+	1    3050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 5A0E9F28
+P 6200 3800
+F 0 "R25" V 6280 3800 50  0000 C CNN
+F 1 "200k" V 6200 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6130 3800 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376" H 6200 3800 50  0001 C CNN
+F 4 "PT1206FR-070R25L" H 6200 3800 60  0001 C CNN "part-num"
+F 5 "Yageo" H 6200 3800 60  0001 C CNN "manf"
+	1    6200 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R26
+U 1 1 5A0E9FD0
+P 6200 5400
+F 0 "R26" V 6280 5400 50  0000 C CNN
+F 1 "67k" V 6200 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6130 5400 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376" H 6200 5400 50  0001 C CNN
+F 4 "PT1206FR-070R25L" H 6200 5400 60  0001 C CNN "part-num"
+F 5 "Yageo" H 6200 5400 60  0001 C CNN "manf"
+	1    6200 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5A0EA020
+P 6200 5600
+F 0 "#PWR016" H 6200 5350 50  0001 C CNN
+F 1 "GND" H 6200 5450 50  0000 C CNN
+F 2 "" H 6200 5600 50  0001 C CNN
+F 3 "" H 6200 5600 50  0001 C CNN
+	1    6200 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5A0ED75E
+P 3750 5600
+F 0 "#PWR017" H 3750 5350 50  0001 C CNN
+F 1 "GND" H 3750 5450 50  0000 C CNN
+F 2 "" H 3750 5600 50  0001 C CNN
+F 3 "" H 3750 5600 50  0001 C CNN
+	1    3750 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L12
+U 1 1 5A0A3318
+P 6400 1250
+F 0 "L12" V 6350 1250 50  0000 C CNN
+F 1 "1µH" V 6475 1250 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805" H 6400 1250 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/murata-electronics-north-america/LQM21FN1R0N00D/490-4026-1-ND/1016286" H 6400 1250 50  0001 C CNN
+F 4 "LQM21FN1R0N00D" H 6400 1250 60  0001 C CNN "part-num"
+F 5 "Murata" H 6400 1250 60  0001 C CNN "manf"
+	1    6400 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 5A0A5254
+P 7000 2650
+F 0 "#PWR018" H 7000 2400 50  0001 C CNN
+F 1 "GND" H 7000 2500 50  0000 C CNN
+F 2 "" H 7000 2650 50  0001 C CNN
+F 3 "" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C12
+U 1 1 5A0A8C27
+P 7000 2100
+F 0 "C12" H 7025 2200 50  0000 L CNN
+F 1 "150µF" H 7025 2000 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_8x10.5" H 7038 1950 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/rubycon/35PEV150M8X10.5/35PEV150M8X10.5CT-ND/5777270" H 7000 2100 50  0001 C CNN
+F 4 "35PEV150M8X10.5" H 7000 2100 60  0001 C CNN "part-num"
+F 5 "Rubycon" H 7000 2100 60  0001 C CNN "manf"
+	1    7000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 5A0DF572
+P 3050 5600
+F 0 "#PWR019" H 3050 5350 50  0001 C CNN
+F 1 "GND" H 3050 5450 50  0000 C CNN
+F 2 "" H 3050 5600 50  0001 C CNN
+F 3 "" H 3050 5600 50  0001 C CNN
+	1    3050 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5A0DFE3E
+P 6950 5550
+F 0 "#PWR020" H 6950 5300 50  0001 C CNN
+F 1 "GND" H 6950 5400 50  0000 C CNN
+F 2 "" H 6950 5550 50  0001 C CNN
+F 3 "" H 6950 5550 50  0001 C CNN
+	1    6950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 5A0DFF29
+P 5200 2650
+F 0 "#PWR021" H 5200 2400 50  0001 C CNN
+F 1 "GND" H 5200 2500 50  0000 C CNN
+F 2 "" H 5200 2650 50  0001 C CNN
+F 3 "" H 5200 2650 50  0001 C CNN
+	1    5200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 5A0F05EC
+P 4700 5550
+F 0 "#PWR022" H 4700 5300 50  0001 C CNN
+F 1 "GND" H 4700 5400 50  0000 C CNN
+F 2 "" H 4700 5550 50  0001 C CNN
+F 3 "" H 4700 5550 50  0001 C CNN
+	1    4700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L22
+U 1 1 5A12ED30
+P 6700 4750
+F 0 "L22" V 6650 4750 50  0000 C CNN
+F 1 "1µH" V 6775 4750 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805" H 6700 4750 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/murata-electronics-north-america/LQM21FN1R0N00D/490-4026-1-ND/1016286" H 6700 4750 50  0001 C CNN
+F 4 "LQM21FN1R0N00D" H 6700 4750 60  0001 C CNN "part-num"
+F 5 "Murata" H 6700 4750 60  0001 C CNN "manf"
+	1    6700 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C22
+U 1 1 5A0A96C0
+P 6950 5150
+F 0 "C22" H 6975 5250 50  0000 L CNN
+F 1 "120µF" H 6975 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.7" H 6988 5000 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/nichicon/RSA1A121MCN1GS/493-7371-1-ND/3768638" H 6950 5150 50  0001 C CNN
+F 4 "RSA1A121MCN1GS" H 6950 5150 60  0001 C CNN "part-num"
+F 5 "Nichicon" H 6950 5150 60  0001 C CNN "manf"
+	1    6950 5150
+	1    0    0    -1  
+$EndComp
+Text Notes 6200 3300 0    59   ~ 0
+Vout = 1.25*(1+R15/R16)
+Text Notes 6250 6400 0    59   ~ 0
+Vout = 1.25*(1+R25/R26)
+Text Label 2550 1050 0    59   ~ 0
+5Vint
+$Comp
+L L L1
+U 1 1 5A13A2C1
+P 1800 1250
+F 0 "L1" V 1750 1250 50  0000 C CNN
+F 1 "100µH" V 1875 1250 50  0000 C CNN
+F 2 "EigeneFootprints:Murata_DG8040C" H 1800 1250 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/murata-electronics-north-america/1267AY-101M=P3/490-10826-1-ND/5271568" H 1800 1250 50  0001 C CNN
+F 4 "1267AY-101M=P3" H 1800 1250 60  0001 C CNN "part-num"
+F 5 "Murata" H 1800 1250 60  0001 C CNN "manf"
+	1    1800 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG023
+U 1 1 5A147B5E
+P 2150 1150
+F 0 "#FLG023" H 2150 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 1300 50  0000 C CNN
+F 2 "" H 2150 1150 50  0001 C CNN
+F 3 "" H 2150 1150 50  0001 C CNN
+	1    2150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L BSS84 Q28
+U 1 1 5A1B23E8
+P 5400 3850
+F 0 "Q28" H 5600 3925 50  0000 L CNN
+F 1 "BSS84" H 5600 3850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5600 3775 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30149.pdf" H 5400 3850 50  0001 L CNN
+F 4 "BSS84-7-F" H 5400 3850 60  0001 C CNN "part-num"
+F 5 "Diodes Incorporated" H 5400 3850 60  0001 C CNN "manf"
+	1    5400 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L R R27
+U 1 1 5A1B285B
+P 4550 3850
+F 0 "R27" V 4630 3850 50  0000 C CNN
+F 1 "100k" V 4550 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4480 3850 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376" H 4550 3850 50  0001 C CNN
+F 4 "PT1206FR-070R25L" H 4550 3850 60  0001 C CNN "part-num"
+F 5 "Yageo" H 4550 3850 60  0001 C CNN "manf"
+	1    4550 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R28
+U 1 1 5A1B2864
+P 4850 4050
+F 0 "R28" V 4930 4050 50  0000 C CNN
+F 1 "26k1" V 4850 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4780 4050 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376" H 4850 4050 50  0001 C CNN
+F 4 "PT1206FR-070R25L" H 4850 4050 60  0001 C CNN "part-num"
+F 5 "Yageo" H 4850 4050 60  0001 C CNN "manf"
+	1    4850 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 5A1B286B
+P 4850 4250
+F 0 "#PWR024" H 4850 4000 50  0001 C CNN
+F 1 "GND" H 4850 4100 50  0000 C CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener D28
+U 1 1 5A1B770C
+P 5100 4050
+F 0 "D28" H 5100 4150 50  0000 C CNN
+F 1 "D_10V" H 5100 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 5100 4050 50  0001 C CNN
+F 3 "http://assets.nexperia.com/documents/data-sheet/NZH_SER.pdf" H 5100 4050 50  0001 C CNN
+F 4 "NZH10C115" H 5100 4050 60  0001 C CNN "part-num"
+F 5 "Nexperia USA Inc." H 5100 4050 60  0001 C CNN "manf"
+	1    5100 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 5A1B78A4
+P 5100 4250
+F 0 "#PWR025" H 5100 4000 50  0001 C CNN
+F 1 "GND" H 5100 4100 50  0000 C CNN
+F 2 "" H 5100 4250 50  0001 C CNN
+F 3 "" H 5100 4250 50  0001 C CNN
+	1    5100 4250
+	1    0    0    -1  
+$EndComp
+Text Label 900  900  0    60   ~ 0
+24Vin
+$Comp
+L D_Schottky D11
+U 1 1 5A1F598E
+P 4950 1250
+F 0 "D11" H 4950 1350 50  0000 C CNN
+F 1 "D_Schottky" H 4950 1150 50  0000 C CNN
+F 2 "EigeneFootprints:D_SMF_DO-219" H 4950 1250 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SL04-HE3-08/SL04-HE3-08CT-ND/3104495" H 4950 1250 50  0001 C CNN
+F 4 "SL04-HE3-08" H 4950 1250 60  0001 C CNN "part-num"
+F 5 "Vishay Semiconductor Diodes Division" H 4950 1250 60  0001 C CNN "manf"
+	1    4950 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 5A209AD0
+P 1400 900
+F 0 "D1" H 1400 1000 50  0000 C CNN
+F 1 "D_Schottky" H 1400 800 50  0000 C CNN
+F 2 "EigeneFootprints:D_SMF_DO-219" H 1400 900 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SL04-HE3-08/SL04-HE3-08CT-ND/3104495" H 1400 900 50  0001 C CNN
+F 4 "SL04-HE3-08" H 1400 900 60  0001 C CNN "part-num"
+F 5 "Vishay Semiconductor Diodes Division" H 1400 900 60  0001 C CNN "manf"
+	1    1400 900 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 900  7300 1250
+Wire Wire Line
+	5850 2500 5850 2650
+Wire Wire Line
+	2150 2950 5600 2950
+Wire Wire Line
+	7300 1250 6550 1250
+Wire Wire Line
+	5600 2950 5600 2150
+Connection ~ 7300 900 
+Wire Wire Line
+	6850 4750 7800 4750
+Wire Wire Line
+	5250 4750 6550 4750
+Wire Wire Line
+	6200 5550 6200 5600
+Wire Wire Line
+	3750 5150 3750 5600
+Wire Wire Line
+	2850 2650 2850 2700
+Wire Wire Line
+	5500 4750 5500 5000
+Wire Wire Line
+	4700 5400 4700 5550
+Wire Wire Line
+	5200 2650 5200 2250
+Wire Wire Line
+	6950 5550 6950 5300
+Connection ~ 2700 1250
+Wire Wire Line
+	3050 1250 4250 1250
+Wire Wire Line
+	3050 5600 3050 5250
+Wire Notes Line
+	1750 750  1750 3350
+Connection ~ 6950 4750
+Wire Wire Line
+	6950 5000 6950 4750
+Wire Wire Line
+	7000 2250 7000 2650
+Connection ~ 7000 1250
+Wire Wire Line
+	7000 1950 7000 1250
+Wire Wire Line
+	4050 2350 3950 2350
+Wire Wire Line
+	4050 2950 4050 2350
+Connection ~ 5850 2150
+Wire Wire Line
+	5600 2150 5850 2150
+Wire Wire Line
+	5100 1250 6250 1250
+Connection ~ 5850 1250
+Wire Wire Line
+	4350 4950 4150 4950
+Connection ~ 6200 5200
+Wire Wire Line
+	6200 3950 6200 5250
+Wire Wire Line
+	3050 4050 4250 4050
+Wire Wire Line
+	3050 4950 3350 4950
+Connection ~ 5500 4750
+Connection ~ 4700 4750
+Wire Wire Line
+	4700 5100 4700 4750
+Wire Wire Line
+	4150 4750 4950 4750
+Connection ~ 4250 4350
+Wire Wire Line
+	4250 4550 4150 4550
+Wire Wire Line
+	4250 4350 4150 4350
+Wire Wire Line
+	4250 4050 4250 4550
+Connection ~ 3200 4050
+Wire Wire Line
+	3200 4350 3350 4350
+Wire Wire Line
+	3200 4050 3200 4350
+Connection ~ 2650 4050
+Wire Wire Line
+	2650 4550 3350 4550
+Wire Wire Line
+	2650 4050 2650 4550
+Wire Wire Line
+	4750 1950 4750 1250
+Wire Wire Line
+	2850 2350 3150 2350
+Wire Wire Line
+	3550 2550 3550 2650
+Wire Wire Line
+	4250 2150 4250 2650
+Wire Wire Line
+	3950 2150 4250 2150
+Connection ~ 4750 1250
+Wire Wire Line
+	4550 1250 4800 1250
+Wire Wire Line
+	3950 1950 4750 1950
+Wire Wire Line
+	4100 1750 3950 1750
+Connection ~ 4100 1250
+Wire Wire Line
+	4100 1250 4100 1450
+Connection ~ 3100 1250
+Wire Wire Line
+	3100 1750 3150 1750
+Wire Wire Line
+	3100 1250 3100 1750
+Wire Wire Line
+	5500 5300 5500 5550
+Wire Notes Line
+	7550 750  7550 3350
+Wire Notes Line
+	1750 6450 1750 3500
+Wire Notes Line
+	7550 6450 1750 6450
+Wire Notes Line
+	7550 3500 7550 6450
+Wire Notes Line
+	1750 3500 7550 3500
+Wire Notes Line
+	1750 750  7550 750 
+Wire Notes Line
+	7550 3350 1750 3350
+Connection ~ 5200 1250
+Wire Wire Line
+	5200 1950 5200 1250
+Wire Wire Line
+	5850 1650 5850 2200
+Wire Wire Line
+	5850 1250 5850 1350
+Wire Wire Line
+	1550 900  7650 900 
+Wire Wire Line
+	1950 1250 2450 1250
+Wire Wire Line
+	2550 1250 2750 1250
+Wire Wire Line
+	2150 1150 2150 1950
+Connection ~ 2150 1250
+Wire Wire Line
+	850  900  1250 900 
+Wire Wire Line
+	4850 4200 4850 4250
+Wire Wire Line
+	4700 3850 5200 3850
+Wire Wire Line
+	4850 3100 4850 3900
+Wire Wire Line
+	4400 3850 1100 3850
+Wire Wire Line
+	1100 3850 1100 900 
+Connection ~ 1100 900 
+Connection ~ 4850 3850
+Wire Wire Line
+	5500 3650 5500 3550
+Wire Wire Line
+	5500 3550 6200 3550
+Wire Wire Line
+	6200 3550 6200 3650
+Wire Wire Line
+	5950 4750 5950 3550
+Connection ~ 5950 3550
+Connection ~ 5950 4750
+Wire Wire Line
+	5100 3850 5100 3900
+Connection ~ 5100 3850
+Wire Wire Line
+	5100 4200 5100 4250
+Wire Wire Line
+	5500 4050 5500 4250
+Wire Wire Line
+	5500 4250 6200 4250
+Connection ~ 6200 4250
+Wire Wire Line
+	6200 5200 5950 5200
+Wire Wire Line
+	5950 5200 5950 5900
+Wire Wire Line
+	5950 5900 4350 5900
+Wire Wire Line
+	4350 5900 4350 4950
+Connection ~ 1600 900 
+Wire Wire Line
+	2350 1050 2550 1050
+Wire Wire Line
+	2150 2350 2150 2950
+Connection ~ 4050 2950
+Wire Wire Line
+	4850 3100 1800 3100
+Wire Wire Line
+	1800 3100 1800 2150
+Wire Wire Line
+	1800 2150 1850 2150
+$Comp
+L Conn_01x02_Male J10
+U 1 1 5A24977D
+P 2450 1500
+F 0 "J10" H 2450 1600 50  0000 C CNN
+F 1 "Conn_01x02" H 2450 1300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2450 1500 50  0001 C CNN
+F 3 "" H 2450 1500 50  0001 C CNN
+F 4 "S1011EC-02-ND;SPC02SYAN" H 2450 1500 60  0001 C CNN "part-num"
+F 5 "Sullins Connector Solutions" H 2450 1500 60  0001 C CNN "manf"
+	1    2450 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	900  1250 1650 1250
+$Comp
+L Conn_01x02_Male J20
+U 1 1 5A24F8A2
+P 1350 4400
+F 0 "J20" H 1350 4500 50  0000 C CNN
+F 1 "Conn_01x02" H 1350 4200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1350 4400 50  0001 C CNN
+F 3 "" H 1350 4400 50  0001 C CNN
+F 4 "S1011EC-02-ND;SPC02SYAN" H 1350 4400 60  0001 C CNN "part-num"
+F 5 "Sullins Connector Solutions" H 1350 4400 60  0001 C CNN "manf"
+	1    1350 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 900  1600 3450
+Wire Wire Line
+	1600 3450 900  3450
+Wire Wire Line
+	900  3450 900  4100
+Wire Wire Line
+	900  4100 1350 4100
+Wire Wire Line
+	1350 4100 1350 4200
+Wire Wire Line
+	1450 4200 1450 4050
+Wire Wire Line
+	1450 4050 2750 4050
+$Comp
+L BSS138 Q18
+U 1 1 5A1F44ED
+P 2050 2150
+F 0 "Q18" H 2250 2225 50  0000 L CNN
+F 1 "BSS138" H 2250 2150 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2250 2075 50  0001 L CIN
+F 3 "https://www.digikey.ch/product-detail/de/on-semiconductor/BSS138LT1G/BSS138LT1GOSCT-ND/917858" H 2050 2150 50  0001 L CNN
+F 4 "BSS138TA" H 2050 2150 60  0001 C CNN "part-num"
+F 5 "Diodes Incorporated" H 2050 2150 60  0001 C CNN "manf"
+	1    2050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1250 2700 1950
+Wire Wire Line
+	2700 1950 3150 1950
+Wire Wire Line
+	2350 1250 2350 1050
+Connection ~ 2350 1250
+Wire Wire Line
+	2450 1250 2450 1300
+Wire Wire Line
+	2550 1300 2550 1250
+Text Label 3300 900  0    59   ~ 0
+24Vintern
+$EndSCHEMATC

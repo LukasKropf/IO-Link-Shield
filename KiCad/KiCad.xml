@@ -1,0 +1,2581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\lukas\git\bte5511_kropl2\KiCad\KiCad.sch</source>
+    <date>24.09.2018 21:44:06</date>
+    <tool>Eeschema (5.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Arduino IO-Link Master Shield</title>
+        <company>BFH-Ti Burgdorf, Kropl2</company>
+        <rev>4</rev>
+        <date>2017-12-07</date>
+        <source>KiCad.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Energieversorgung/" tstamps="/59F24E2E/">
+      <title_block>
+        <title>Arduino IO-Link Master Shield</title>
+        <company>BFH-Ti Burgdorf, Kropl2</company>
+        <rev>4</rev>
+        <date>2017-12-07</date>
+        <source>Energieversorgung.sch</source>
+        <comment number="1" value="4) BMK angepasst, Jumper Boost korrekt hingesetzt"/>
+        <comment number="2" value="3) Buck Boost Converter abschaltbar gemacht (Jumper)"/>
+        <comment number="3" value="2) Buck Boost Converter automatische Umschaltung"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/IO-LinkMaster1/" tstamps="/59F77867/">
+      <title_block>
+        <title>Arduino IO-Link Master Shield</title>
+        <company>BFH-Ti Burgdorf, Kropl2</company>
+        <rev>4</rev>
+        <date>2017-12-07</date>
+        <source>IO-LinkMaster1.sch</source>
+        <comment number="1" value="4) BKM bearbeitet, IO-Ref für Adressierung genommen"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="P101">
+      <value>Conn_01x08</value>
+      <footprint>Socket_Arduino_Mega:Socket_Strip_Arduino_1x08</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-08-ND</field>
+      </fields>
+      <libsource lib="" part="CONN_01X08" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56D71773</tstamp>
+    </comp>
+    <comp ref="P106">
+      <value>PWM</value>
+      <footprint>Socket_Arduino_Mega:Socket_Strip_Arduino_1x10</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-10-ND</field>
+      </fields>
+      <libsource lib="" part="CONN_01X10" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56D72368</tstamp>
+    </comp>
+    <comp ref="P102">
+      <value>Conn_01x08</value>
+      <footprint>Socket_Arduino_Mega:Socket_Strip_Arduino_1x08</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-08-ND</field>
+      </fields>
+      <libsource lib="" part="CONN_01X08" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56D72F1C</tstamp>
+    </comp>
+    <comp ref="P107">
+      <value>Conn_01x08</value>
+      <footprint>Socket_Arduino_Mega:Socket_Strip_Arduino_1x08</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-08-ND</field>
+      </fields>
+      <libsource lib="" part="CONN_01X08" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56D734D0</tstamp>
+    </comp>
+    <comp ref="P103">
+      <value>Conn_01x08</value>
+      <footprint>Socket_Arduino_Mega:Socket_Strip_Arduino_1x08</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-08-ND</field>
+      </fields>
+      <libsource lib="" part="CONN_01X08" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56D73A0E</tstamp>
+    </comp>
+    <comp ref="P108">
+      <value>Conn_01x08</value>
+      <footprint>Socket_Arduino_Mega:Socket_Strip_Arduino_1x08</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-08-ND</field>
+      </fields>
+      <libsource lib="" part="CONN_01X08" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56D73F2C</tstamp>
+    </comp>
+    <comp ref="P105">
+      <value>Digital</value>
+      <footprint>Socket_Arduino_Mega:Socket_Strip_Arduino_2x18</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S2211EC-18-ND</field>
+      </fields>
+      <libsource lib="" part="CONN_02X18" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56D743B5</tstamp>
+    </comp>
+    <comp ref="P104">
+      <value>SPI</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S7106-ND</field>
+      </fields>
+      <libsource lib="" part="Conn_02x03_Odd_Even" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F27E9C</tstamp>
+    </comp>
+    <comp ref="J120">
+      <value>MDm Banana</value>
+      <footprint>EigeneFootprints:Banana_4mm_CT2230</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/cal-test-electronics/CT2230-2/BKCT2230-2-ND/5765413</datasheet>
+      <fields>
+        <field name="manf">Cal Test Electronics</field>
+        <field name="part-num">CT2230-2</field>
+      </fields>
+      <libsource lib="" part="Conn_01x01" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1048DA</tstamp>
+    </comp>
+    <comp ref="J121">
+      <value>MDm Banana</value>
+      <footprint>EigeneFootprints:Banana_4mm_CT2230</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/cal-test-electronics/CT2230-0/BKCT2230-0-ND/5765412</datasheet>
+      <fields>
+        <field name="manf">Cal Test Electronics</field>
+        <field name="part-num">CT2230-0</field>
+      </fields>
+      <libsource lib="" part="Conn_01x01" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A126DBE</tstamp>
+    </comp>
+    <comp ref="J122">
+      <value>TEST_1P</value>
+      <footprint>EigeneFootprints:TestPoint_Keystone_5006_Black</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/keystone-electronics/5006/36-5006-ND/255330</datasheet>
+      <fields>
+        <field name="manf">Keystone Electronics</field>
+        <field name="part-num">36-5006-ND</field>
+      </fields>
+      <libsource lib="" part="TEST_1P" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A10F56C</tstamp>
+    </comp>
+    <comp ref="R120">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="manf">Hersteller</field>
+        <field name="part-num">Hersteller Nummer</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB5B00D</tstamp>
+    </comp>
+    <comp ref="R121">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="manf">Hersteller</field>
+        <field name="part-num">Hersteller Nummer</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB5C081</tstamp>
+    </comp>
+    <comp ref="R122">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="manf">Hersteller</field>
+        <field name="part-num">Hersteller Nummer</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB5C100</tstamp>
+    </comp>
+    <comp ref="L11">
+      <value>47µH</value>
+      <footprint>EigeneFootprints:SRN6045</footprint>
+      <datasheet>http://www.bourns.com/docs/Product-Datasheets/SRN6045.pdf</datasheet>
+      <fields>
+        <field name="manf">Bourns inc</field>
+        <field name="part-num">SRN6045-470M</field>
+      </fields>
+      <libsource lib="" part="L" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>59FB1A1F</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>200k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/products/de/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;umin2085=200&amp;umax2085=201&amp;rfu2085=kOhms&amp;FV=ffec1104%2Cfffc000d%2Cc0001%2C1c0002%2C400007%2Cffe00034&amp;mnonly=0&amp;ColumnSort=2085&amp;page=1&amp;stock=1&amp;quantity=0&amp;ptm=0&amp;fid=0&amp;pageSize=25</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07200KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>59FB1E8D</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>11k5</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/RC0805FR-0711K5L/311-11.5KCRCT-ND/730503</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0711K5L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>59FB1EE1</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>150µF</value>
+      <footprint>Capacitors_SMD:CP_Elec_8x10.5</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/rubycon/35PEV150M8X10.5/35PEV150M8X10.5CT-ND/5777270</datasheet>
+      <fields>
+        <field name="manf">Rubycon</field>
+        <field name="part-num">35PEV150M8X10.5</field>
+      </fields>
+      <libsource lib="" part="CP" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>59FB1F78</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>120µF</value>
+      <footprint>Capacitors_SMD:CP_Elec_6.3x5.7</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nichicon/RSA1A121MCN1GS/493-7371-1-ND/3768638</datasheet>
+      <fields>
+        <field name="manf">Nichicon</field>
+        <field name="part-num">RSA1A121MCN1GS</field>
+      </fields>
+      <libsource lib="" part="CP" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>59FC4047</tstamp>
+    </comp>
+    <comp ref="L21">
+      <value>47µH</value>
+      <footprint>EigeneFootprints:SRN6045</footprint>
+      <datasheet>http://www.bourns.com/docs/Product-Datasheets/SRN6045.pdf</datasheet>
+      <fields>
+        <field name="manf">Bourns inc</field>
+        <field name="part-num">SRN6045-470M</field>
+      </fields>
+      <libsource lib="" part="L" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>59FC7EC7</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>MC34063</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/03/f9/c4/3d/7f/eb/4c/5e/CD00001232.pdf/files/CD00001232.pdf/jcr:content/translations/en.CD00001232.pdf</datasheet>
+      <fields>
+        <field name="manf">STMMicroelectronics</field>
+        <field name="part-num">MC34063ACD-TR</field>
+      </fields>
+      <libsource lib="" part="MC34063" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0CFF21</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>180</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/RC1206FR-07180RL/311-180FRCT-ND/731544</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07180RL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0D0C4C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>0R330</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/RC1206JR-070RL/311-0.0ERCT-ND/732131</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RL0805FR-7W0R33L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0D1C63</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>D_Schottky</value>
+      <footprint>EigeneFootprints:D_SMF_DO-219</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SL04-HE3-08/SL04-HE3-08CT-ND/3104495</datasheet>
+      <fields>
+        <field name="manf">Vishay Semiconductor Diodes Division</field>
+        <field name="part-num">SL04-HE3-08</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0D492B</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>430pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM2165C1H431JA01-01.pdf</datasheet>
+      <fields>
+        <field name="manf">KEMET</field>
+        <field name="part-num">C0805C431J5GAC7800</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0D6559</tstamp>
+    </comp>
+    <comp ref="U20">
+      <value>MC34063</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/03/f9/c4/3d/7f/eb/4c/5e/CD00001232.pdf/files/CD00001232.pdf/jcr:content/translations/en.CD00001232.pdf</datasheet>
+      <fields>
+        <field name="manf">STMMicroelectronics</field>
+        <field name="part-num">MC34063ACD-TR</field>
+      </fields>
+      <libsource lib="" part="MC34063" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0E0181</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>0R25</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RL0805FR-070R25L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0E3A28</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>120pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/murata-electronics-north-america/GRM2165C1H121JA01D/490-9737-1-ND/4934913</datasheet>
+      <fields>
+        <field name="manf">MuRata</field>
+        <field name="part-num">GRM2165C1H121JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0E5E10</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>200k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07200KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0E9F28</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>68k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0768KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0E9FD0</tstamp>
+    </comp>
+    <comp ref="L12">
+      <value>1µH</value>
+      <footprint>Inductors_SMD:L_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/murata-electronics-north-america/LQM21FN1R0N00D/490-4026-1-ND/1016286</datasheet>
+      <fields>
+        <field name="manf">Murata</field>
+        <field name="part-num">LQM21FN1R0N00D</field>
+      </fields>
+      <libsource lib="" part="L" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0A3318</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>150µF</value>
+      <footprint>Capacitors_SMD:CP_Elec_8x10.5</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/rubycon/35PEV150M8X10.5/35PEV150M8X10.5CT-ND/5777270</datasheet>
+      <fields>
+        <field name="manf">Rubycon</field>
+        <field name="part-num">35PEV150M8X10.5</field>
+      </fields>
+      <libsource lib="" part="CP" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0A8C27</tstamp>
+    </comp>
+    <comp ref="L22">
+      <value>1µH</value>
+      <footprint>Inductors_SMD:L_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/murata-electronics-north-america/LQM21FN1R0N00D/490-4026-1-ND/1016286</datasheet>
+      <fields>
+        <field name="manf">Murata</field>
+        <field name="part-num">LQM21FN1R0N00D</field>
+      </fields>
+      <libsource lib="" part="L" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A12ED30</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>120µF</value>
+      <footprint>Capacitors_SMD:CP_Elec_6.3x5.7</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nichicon/RSA1A121MCN1GS/493-7371-1-ND/3768638</datasheet>
+      <fields>
+        <field name="manf">Nichicon</field>
+        <field name="part-num">RSA1A121MCN1GS</field>
+      </fields>
+      <libsource lib="" part="CP" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A0A96C0</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>100µH</value>
+      <footprint>EigeneFootprints:Murata_DG8040C</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/murata-electronics-north-america/1267AY-101M=P3/490-10826-1-ND/5271568</datasheet>
+      <fields>
+        <field name="manf">Murata</field>
+        <field name="part-num">1267AY-101M=P3</field>
+      </fields>
+      <libsource lib="" part="L" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A13A2C1</tstamp>
+    </comp>
+    <comp ref="Q28">
+      <value>BSS84</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30149.pdf</datasheet>
+      <fields>
+        <field name="manf">Diodes Incorporated</field>
+        <field name="part-num">BSS84-7-F</field>
+      </fields>
+      <libsource lib="" part="BSS84" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A1B23E8</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A1B285B</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>26k1</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0726K1L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A1B2864</tstamp>
+    </comp>
+    <comp ref="D28">
+      <value>D_10V</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://assets.nexperia.com/documents/data-sheet/NZH_SER.pdf</datasheet>
+      <fields>
+        <field name="manf">Nexperia USA Inc.</field>
+        <field name="part-num">NZH10C115</field>
+      </fields>
+      <libsource lib="" part="D_Zener" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A1B770C</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>D_Schottky</value>
+      <footprint>EigeneFootprints:D_SMF_DO-219</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SL04-HE3-08/SL04-HE3-08CT-ND/3104495</datasheet>
+      <fields>
+        <field name="manf">Vishay Semiconductor Diodes Division</field>
+        <field name="part-num">SL04-HE3-08</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A1F598E</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>D_Schottky</value>
+      <footprint>EigeneFootprints:D_SMF_DO-219</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SL04-HE3-08/SL04-HE3-08CT-ND/3104495</datasheet>
+      <fields>
+        <field name="manf">Vishay Semiconductor Diodes Division</field>
+        <field name="part-num">SL04-HE3-08</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A209AD0</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>Conn_01x02</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-02-ND;SPC02SYAN</field>
+      </fields>
+      <libsource lib="" part="Conn_01x02_Male" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A24977D</tstamp>
+    </comp>
+    <comp ref="J20">
+      <value>Conn_01x02</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">S1011EC-02-ND;SPC02SYAN</field>
+      </fields>
+      <libsource lib="" part="Conn_01x02_Male" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A24F8A2</tstamp>
+    </comp>
+    <comp ref="Q18">
+      <value>BSS138</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/on-semiconductor/BSS138LT1G/BSS138LT1GOSCT-ND/917858</datasheet>
+      <fields>
+        <field name="manf">Diodes Incorporated</field>
+        <field name="part-num">BSS138TA</field>
+      </fields>
+      <libsource lib="" part="BSS138" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5A1F44ED</tstamp>
+    </comp>
+    <comp ref="U201">
+      <value>TPS61170</value>
+      <libsource lib="" part="TPS61170" description=""/>
+      <sheetpath names="/Energieversorgung/" tstamps="/59F24E2E/"/>
+      <tstamp>5AB5DAB6</tstamp>
+    </comp>
+    <comp ref="J301">
+      <value>M12-5</value>
+      <footprint>EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180</footprint>
+      <datasheet>https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1694237</field>
+      </fields>
+      <libsource lib="" part="M12-5" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>59F7A090</tstamp>
+    </comp>
+    <comp ref="J302">
+      <value>Conn_01x03</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>http://sullinscorp.com/catalogs/101_PAGE114-115_.100_FEMALE_HDR.pdf</datasheet>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">PPPC031LFBN-RC</field>
+      </fields>
+      <libsource lib="" part="Conn_01x03" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>59F7A4A1</tstamp>
+    </comp>
+    <comp ref="C301">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012107003.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207103</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A085864</tstamp>
+    </comp>
+    <comp ref="R301">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A08B82B</tstamp>
+    </comp>
+    <comp ref="R303">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A0B5267</tstamp>
+    </comp>
+    <comp ref="R302">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A0B5C30</tstamp>
+    </comp>
+    <comp ref="R304">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A0B92F6</tstamp>
+    </comp>
+    <comp ref="U300">
+      <value>MAX14824GTG+</value>
+      <footprint>EigeneFootprints:QFN-24-1EP_4x4mm_Pitch0.5mm_Maxim</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/MAX14824.pdf</datasheet>
+      <fields>
+        <field name="manf">Maxim Integrated</field>
+        <field name="part-num">MAX14824GTG+</field>
+      </fields>
+      <libsource lib="" part="MAX14824GTG+" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A1CC9F1</tstamp>
+    </comp>
+    <comp ref="C302">
+      <value>220nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207018.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207018</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A1E1128</tstamp>
+    </comp>
+    <comp ref="C303">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207022.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207022</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A1E37EC</tstamp>
+    </comp>
+    <comp ref="C304">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207016.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207016</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A1E3895</tstamp>
+    </comp>
+    <comp ref="D301">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A200022</tstamp>
+    </comp>
+    <comp ref="D302">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A200335</tstamp>
+    </comp>
+    <comp ref="C305">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A200D35</tstamp>
+    </comp>
+    <comp ref="C306">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A200DB7</tstamp>
+    </comp>
+    <comp ref="C307">
+      <value>1nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM216R71H102KA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A206F53</tstamp>
+    </comp>
+    <comp ref="D303">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A1CD9D4</tstamp>
+    </comp>
+    <comp ref="D304">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A1CF982</tstamp>
+    </comp>
+    <comp ref="J321">
+      <value>M12-5</value>
+      <footprint>EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180</footprint>
+      <datasheet>https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1694237</field>
+      </fields>
+      <libsource lib="" part="M12-5" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CC9B</tstamp>
+    </comp>
+    <comp ref="J322">
+      <value>Conn_01x03</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>http://sullinscorp.com/catalogs/101_PAGE114-115_.100_FEMALE_HDR.pdf</datasheet>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">PPPC031LFBN-RC</field>
+      </fields>
+      <libsource lib="" part="Conn_01x03" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCA4</tstamp>
+    </comp>
+    <comp ref="C321">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012107003.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207103</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCAD</tstamp>
+    </comp>
+    <comp ref="R305">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCBC</tstamp>
+    </comp>
+    <comp ref="R307">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCCB</tstamp>
+    </comp>
+    <comp ref="R306">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCD4</tstamp>
+    </comp>
+    <comp ref="R308">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCDD</tstamp>
+    </comp>
+    <comp ref="U320">
+      <value>MAX14824GTG+</value>
+      <footprint>EigeneFootprints:QFN-24-1EP_4x4mm_Pitch0.5mm_Maxim</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/MAX14824.pdf</datasheet>
+      <fields>
+        <field name="manf">Maxim Integrated</field>
+        <field name="part-num">MAX14824GTG+</field>
+      </fields>
+      <libsource lib="" part="MAX14824GTG+" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCEC</tstamp>
+    </comp>
+    <comp ref="C322">
+      <value>220nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207018.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207018</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCF5</tstamp>
+    </comp>
+    <comp ref="C323">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207022.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207022</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CCFE</tstamp>
+    </comp>
+    <comp ref="C324">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207016.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207016</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD07</tstamp>
+    </comp>
+    <comp ref="D321">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD16</tstamp>
+    </comp>
+    <comp ref="D322">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD1F</tstamp>
+    </comp>
+    <comp ref="C325">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD28</tstamp>
+    </comp>
+    <comp ref="C326">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD31</tstamp>
+    </comp>
+    <comp ref="C327">
+      <value>1nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM216R71H102KA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD4C</tstamp>
+    </comp>
+    <comp ref="D323">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD5B</tstamp>
+    </comp>
+    <comp ref="D324">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20CD6A</tstamp>
+    </comp>
+    <comp ref="J311">
+      <value>M12-5</value>
+      <footprint>EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180</footprint>
+      <datasheet>https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1694237</field>
+      </fields>
+      <libsource lib="" part="M12-5" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EECB</tstamp>
+    </comp>
+    <comp ref="J312">
+      <value>Conn_01x03</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>http://sullinscorp.com/catalogs/101_PAGE114-115_.100_FEMALE_HDR.pdf</datasheet>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">PPPC031LFBN-RC</field>
+      </fields>
+      <libsource lib="" part="Conn_01x03" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EED4</tstamp>
+    </comp>
+    <comp ref="C311">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012107003.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207103</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EEDD</tstamp>
+    </comp>
+    <comp ref="R309">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EEEC</tstamp>
+    </comp>
+    <comp ref="R311">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EEFB</tstamp>
+    </comp>
+    <comp ref="R310">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF04</tstamp>
+    </comp>
+    <comp ref="R312">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF0D</tstamp>
+    </comp>
+    <comp ref="U310">
+      <value>MAX14824GTG+</value>
+      <footprint>EigeneFootprints:QFN-24-1EP_4x4mm_Pitch0.5mm_Maxim</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/MAX14824.pdf</datasheet>
+      <fields>
+        <field name="manf">Maxim Integrated</field>
+        <field name="part-num">MAX14824GTG+</field>
+      </fields>
+      <libsource lib="" part="MAX14824GTG+" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF1C</tstamp>
+    </comp>
+    <comp ref="C312">
+      <value>220nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207018.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207018</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF25</tstamp>
+    </comp>
+    <comp ref="C313">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207022.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207022</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF2E</tstamp>
+    </comp>
+    <comp ref="C314">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207016.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207016</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF37</tstamp>
+    </comp>
+    <comp ref="D311">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF46</tstamp>
+    </comp>
+    <comp ref="D312">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF4F</tstamp>
+    </comp>
+    <comp ref="C315">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF58</tstamp>
+    </comp>
+    <comp ref="C316">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF61</tstamp>
+    </comp>
+    <comp ref="C317">
+      <value>1nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM216R71H102KA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF7C</tstamp>
+    </comp>
+    <comp ref="D313">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF8B</tstamp>
+    </comp>
+    <comp ref="D314">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A20EF9A</tstamp>
+    </comp>
+    <comp ref="J331">
+      <value>M12-5</value>
+      <footprint>EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180</footprint>
+      <datasheet>https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1694237</field>
+      </fields>
+      <libsource lib="" part="M12-5" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106AB</tstamp>
+    </comp>
+    <comp ref="J332">
+      <value>Conn_01x03</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</footprint>
+      <datasheet>http://sullinscorp.com/catalogs/101_PAGE114-115_.100_FEMALE_HDR.pdf</datasheet>
+      <fields>
+        <field name="manf">Sullins Connector Solutions</field>
+        <field name="part-num">PPPC031LFBN-RC</field>
+      </fields>
+      <libsource lib="" part="Conn_01x03" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106B4</tstamp>
+    </comp>
+    <comp ref="C331">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012107003.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207103</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106BD</tstamp>
+    </comp>
+    <comp ref="R313">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106CC</tstamp>
+    </comp>
+    <comp ref="R315">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-07100KL</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106DB</tstamp>
+    </comp>
+    <comp ref="R314">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106E4</tstamp>
+    </comp>
+    <comp ref="R316">
+      <value>16k2</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0716K2L</field>
+      </fields>
+      <libsource lib="" part="R" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106ED</tstamp>
+    </comp>
+    <comp ref="U330">
+      <value>MAX14824GTG+</value>
+      <footprint>EigeneFootprints:QFN-24-1EP_4x4mm_Pitch0.5mm_Maxim</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/MAX14824.pdf</datasheet>
+      <fields>
+        <field name="manf">Maxim Integrated</field>
+        <field name="part-num">MAX14824GTG+</field>
+      </fields>
+      <libsource lib="" part="MAX14824GTG+" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A2106FC</tstamp>
+    </comp>
+    <comp ref="C332">
+      <value>220nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207018.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207018</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A210705</tstamp>
+    </comp>
+    <comp ref="C333">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207022.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207022</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A21070E</tstamp>
+    </comp>
+    <comp ref="C334">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/885012207016.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207016</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A210717</tstamp>
+    </comp>
+    <comp ref="D331">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A210726</tstamp>
+    </comp>
+    <comp ref="D332">
+      <value>NTS245SFT1GOSCT-ND</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">NTS245SFT1GOSCT-ND</field>
+      </fields>
+      <libsource lib="" part="D_Schottky" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A21072F</tstamp>
+    </comp>
+    <comp ref="C335">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A210738</tstamp>
+    </comp>
+    <comp ref="C336">
+      <value>270pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM2165C1H271JA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A210741</tstamp>
+    </comp>
+    <comp ref="C337">
+      <value>1nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="manf">Murata Electronics North America</field>
+        <field name="part-num">GRM216R71H102KA01D</field>
+      </fields>
+      <libsource lib="" part="C" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A21075C</tstamp>
+    </comp>
+    <comp ref="D333">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A21076B</tstamp>
+    </comp>
+    <comp ref="D334">
+      <value>SM36T1G</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">SM36T1G</field>
+      </fields>
+      <libsource lib="" part="SP0502BAHT" description=""/>
+      <sheetpath names="/IO-LinkMaster1/" tstamps="/59F77867/"/>
+      <tstamp>5A21077A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="BSS138">
+      <aliases>
+        <alias>2N7002</alias>
+        <alias>MMBF170</alias>
+      </aliases>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="C">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="CONN_01X08">
+      <footprints>
+        <fp>Pin_Header_Straight_1X08</fp>
+        <fp>Pin_Header_Angled_1X08</fp>
+        <fp>Socket_Strip_Straight_1X08</fp>
+        <fp>Socket_Strip_Angled_1X08</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="CONN_01X10">
+      <footprints>
+        <fp>Pin_Header_Straight_1X10</fp>
+        <fp>Pin_Header_Angled_1X10</fp>
+        <fp>Socket_Strip_Straight_1X10</fp>
+        <fp>Socket_Strip_Angled_1X10</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="CONN_02X18">
+      <footprints>
+        <fp>Pin_Header_Straight_2X18</fp>
+        <fp>Pin_Header_Angled_2X18</fp>
+        <fp>Socket_Strip_Straight_2X18</fp>
+        <fp>Socket_Strip_Angled_2X18</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_02X18</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+        <pin num="27" name="P27" type="passive"/>
+        <pin num="28" name="P28" type="passive"/>
+        <pin num="29" name="P29" type="passive"/>
+        <pin num="30" name="P30" type="passive"/>
+        <pin num="31" name="P31" type="passive"/>
+        <pin num="32" name="P32" type="passive"/>
+        <pin num="33" name="P33" type="passive"/>
+        <pin num="34" name="P34" type="passive"/>
+        <pin num="35" name="P35" type="passive"/>
+        <pin num="36" name="P36" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="CP">
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="Conn_01x01">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="Conn_01x02_Male">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="Conn_01x03">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="Conn_02x03_Odd_Even">
+      <footprints>
+        <fp>Connector*:*2x??x*mm*</fp>
+        <fp>Connector*:*2x???Pitch*</fp>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="D_Schottky">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="D_Zener">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="L">
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="M12-5">
+      <footprints>
+        <fp>Phoenix_SACC-DSIV-M12FS-</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">M12-5</field>
+        <field name="Footprint">EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180</field>
+        <field name="Datasheet">https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf</field>
+        <field name="part-num">1694237</field>
+        <field name="manf">Phoenix Conact</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="MAX14824GTG+">
+      <footprints>
+        <fp>21-0139I_T2444-4</fp>
+        <fp>21-0139I_T2444-4-M</fp>
+        <fp>21-0139I_T2444-4-L</fp>
+        <fp>QFN-24</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX14824GTG+</field>
+        <field name="Footprint">21-0139I_T2444-4</field>
+        <field name="Datasheet">https://datasheets.maximintegrated.com/en/ds/MAX14824.pdf</field>
+        <field name="part-num">MAX14824GTG+</field>
+        <field name="manf">Maxim Integrated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="LDOIN" type="power_in"/>
+        <pin num="2" name="V5" type="input"/>
+        <pin num="3" name="LDO33" type="output"/>
+        <pin num="4" name="~IRQ" type="output"/>
+        <pin num="5" name="SCLK" type="input"/>
+        <pin num="6" name="~CS" type="input"/>
+        <pin num="7" name="SDO" type="output"/>
+        <pin num="8" name="SDI" type="input"/>
+        <pin num="9" name="VL" type="input"/>
+        <pin num="10" name="A3" type="input"/>
+        <pin num="11" name="TXQ" type="input"/>
+        <pin num="12" name="TXC" type="input"/>
+        <pin num="13" name="TXEN" type="input"/>
+        <pin num="14" name="RX" type="output"/>
+        <pin num="15" name="WUEN" type="input"/>
+        <pin num="16" name="A2" type="input"/>
+        <pin num="17" name="LI" type="output"/>
+        <pin num="18" name="UV" type="output"/>
+        <pin num="19" name="DI" type="input"/>
+        <pin num="20" name="GND" type="input"/>
+        <pin num="21" name="C/Q" type="BiDi"/>
+        <pin num="22" name="A1" type="input"/>
+        <pin num="23" name="VCC" type="power_in"/>
+        <pin num="24" name="A0" type="input"/>
+        <pin num="25" name="EPAD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="MC34063">
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*3.9x4.9mm*Pitch1.27mm*</fp>
+        <fp>DFN*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MC34063</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SwC" type="passive"/>
+        <pin num="2" name="SwE" type="passive"/>
+        <pin num="3" name="TC" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Vfb" type="input"/>
+        <pin num="6" name="Vin(VCC)" type="power_in"/>
+        <pin num="7" name="Ipk" type="input"/>
+        <pin num="8" name="DC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="R">
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="SP0502BAHT">
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SP0502BAHT</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="input"/>
+        <pin num="2" name="K" type="input"/>
+        <pin num="3" name="A" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="TEST_1P">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TEST_1P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="TP0610T">
+      <aliases>
+        <alias>VP0610T</alias>
+        <alias>BSS84</alias>
+        <alias>NTR2101P</alias>
+        <alias>BSS83P</alias>
+      </aliases>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TP0610T</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="TPS61170">
+      <docs>http://www.ti.com/lit/ds/symlink/tps61170.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61170</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="Comp" type="output"/>
+        <pin num="3" name="GND" type="output"/>
+        <pin num="4" name="SW" type="input"/>
+        <pin num="5" name="CTRL" type="input"/>
+        <pin num="6" name="VIN" type="input"/>
+        <pin num="TP" name="ThermalPad" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries/>
+  <nets>
+    <net code="1" name="/0(Rx0)">
+      <node ref="P107" pin="8"/>
+      <node ref="U300" pin="14"/>
+    </net>
+    <net code="2" name="/1(Tx0)">
+      <node ref="P107" pin="7"/>
+      <node ref="U300" pin="12"/>
+    </net>
+    <net code="3" name="/5(**)">
+      <node ref="U300" pin="4"/>
+      <node ref="P107" pin="3"/>
+    </net>
+    <net code="4" name="/7(**)">
+      <node ref="U300" pin="18"/>
+      <node ref="P107" pin="1"/>
+    </net>
+    <net code="5" name="/8(**)">
+      <node ref="U300" pin="17"/>
+      <node ref="P106" pin="10"/>
+    </net>
+    <net code="6" name="/6(**)">
+      <node ref="P107" pin="2"/>
+      <node ref="U300" pin="13"/>
+    </net>
+    <net code="7" name="Net-(P104-Pad5)">
+      <node ref="P104" pin="5"/>
+    </net>
+    <net code="8" name="/24">
+      <node ref="U330" pin="18"/>
+      <node ref="P105" pin="31"/>
+    </net>
+    <net code="9" name="/23">
+      <node ref="U330" pin="17"/>
+      <node ref="P105" pin="34"/>
+    </net>
+    <net code="10" name="/29">
+      <node ref="P105" pin="28"/>
+      <node ref="U320" pin="13"/>
+    </net>
+    <net code="11" name="/17(Rx2)">
+      <node ref="P108" pin="4"/>
+      <node ref="U320" pin="14"/>
+    </net>
+    <net code="12" name="/30">
+      <node ref="U310" pin="15"/>
+      <node ref="P105" pin="25"/>
+    </net>
+    <net code="13" name="/33">
+      <node ref="P105" pin="24"/>
+      <node ref="U310" pin="13"/>
+    </net>
+    <net code="14" name="/19(Rx1)">
+      <node ref="P108" pin="6"/>
+      <node ref="U310" pin="14"/>
+    </net>
+    <net code="15" name="/18(Tx1)">
+      <node ref="P108" pin="5"/>
+      <node ref="U310" pin="12"/>
+    </net>
+    <net code="16" name="/4(**)">
+      <node ref="P107" pin="4"/>
+      <node ref="U310" pin="4"/>
+    </net>
+    <net code="17" name="/32">
+      <node ref="U310" pin="18"/>
+      <node ref="P105" pin="23"/>
+    </net>
+    <net code="18" name="/31">
+      <node ref="U310" pin="17"/>
+      <node ref="P105" pin="26"/>
+    </net>
+    <net code="19" name="/9(**)">
+      <node ref="P106" pin="9"/>
+      <node ref="U300" pin="15"/>
+    </net>
+    <net code="20" name="/48">
+      <node ref="P105" pin="7"/>
+    </net>
+    <net code="21" name="/46">
+      <node ref="P105" pin="9"/>
+    </net>
+    <net code="22" name="/44">
+      <node ref="P105" pin="11"/>
+    </net>
+    <net code="23" name="/42">
+      <node ref="P105" pin="13"/>
+    </net>
+    <net code="24" name="/40">
+      <node ref="P105" pin="15"/>
+    </net>
+    <net code="25" name="/38">
+      <node ref="P105" pin="17"/>
+    </net>
+    <net code="26" name="/36">
+      <node ref="P105" pin="19"/>
+    </net>
+    <net code="27" name="/34">
+      <node ref="P105" pin="21"/>
+    </net>
+    <net code="28" name="/50">
+      <node ref="R121" pin="2"/>
+      <node ref="P105" pin="5"/>
+    </net>
+    <net code="29" name="/21(SCL)">
+      <node ref="P108" pin="8"/>
+    </net>
+    <net code="30" name="/20(SDA)">
+      <node ref="P108" pin="7"/>
+    </net>
+    <net code="31" name="/37">
+      <node ref="P105" pin="20"/>
+    </net>
+    <net code="32" name="/53">
+      <node ref="P105" pin="4"/>
+      <node ref="R122" pin="2"/>
+    </net>
+    <net code="33" name="/51">
+      <node ref="P105" pin="6"/>
+    </net>
+    <net code="34" name="/49">
+      <node ref="P105" pin="8"/>
+    </net>
+    <net code="35" name="/47">
+      <node ref="P105" pin="10"/>
+    </net>
+    <net code="36" name="/45">
+      <node ref="P105" pin="12"/>
+    </net>
+    <net code="37" name="/43">
+      <node ref="P105" pin="14"/>
+    </net>
+    <net code="38" name="/41">
+      <node ref="P105" pin="16"/>
+    </net>
+    <net code="39" name="/39">
+      <node ref="P105" pin="18"/>
+    </net>
+    <net code="40" name="/2(**)">
+      <node ref="P107" pin="6"/>
+      <node ref="U330" pin="4"/>
+    </net>
+    <net code="41" name="/35">
+      <node ref="P105" pin="22"/>
+    </net>
+    <net code="42" name="/52">
+      <node ref="R120" pin="2"/>
+      <node ref="P105" pin="3"/>
+    </net>
+    <net code="43" name="/22">
+      <node ref="U330" pin="15"/>
+      <node ref="P105" pin="33"/>
+    </net>
+    <net code="44" name="/14(Tx3)">
+      <node ref="U330" pin="12"/>
+      <node ref="P108" pin="1"/>
+    </net>
+    <net code="45" name="/15(Rx3)">
+      <node ref="U330" pin="14"/>
+      <node ref="P108" pin="2"/>
+    </net>
+    <net code="46" name="/Reset">
+      <node ref="P101" pin="3"/>
+    </net>
+    <net code="47" name="/3.3V">
+      <node ref="P101" pin="4"/>
+    </net>
+    <net code="48" name="/25">
+      <node ref="U330" pin="13"/>
+      <node ref="P105" pin="32"/>
+    </net>
+    <net code="49" name="/13(**)">
+      <node ref="P106" pin="5"/>
+    </net>
+    <net code="50" name="/12(**)">
+      <node ref="P106" pin="6"/>
+    </net>
+    <net code="51" name="/11(**)">
+      <node ref="P106" pin="7"/>
+    </net>
+    <net code="52" name="/24V">
+      <node ref="D333" pin="2"/>
+      <node ref="U300" pin="23"/>
+      <node ref="J20" pin="1"/>
+      <node ref="C301" pin="1"/>
+      <node ref="J301" pin="1"/>
+      <node ref="C321" pin="1"/>
+      <node ref="J321" pin="1"/>
+      <node ref="D311" pin="1"/>
+      <node ref="D303" pin="2"/>
+      <node ref="D303" pin="1"/>
+      <node ref="C311" pin="1"/>
+      <node ref="C315" pin="1"/>
+      <node ref="D333" pin="1"/>
+      <node ref="C305" pin="1"/>
+      <node ref="D301" pin="1"/>
+      <node ref="C325" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D331" pin="1"/>
+      <node ref="D323" pin="2"/>
+      <node ref="D323" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="D321" pin="1"/>
+      <node ref="J311" pin="1"/>
+      <node ref="J331" pin="1"/>
+      <node ref="U310" pin="23"/>
+      <node ref="C335" pin="1"/>
+      <node ref="D313" pin="2"/>
+      <node ref="D313" pin="1"/>
+      <node ref="U330" pin="23"/>
+      <node ref="U320" pin="23"/>
+      <node ref="L12" pin="2"/>
+      <node ref="C331" pin="1"/>
+    </net>
+    <net code="53" name="/20">
+      <node ref="P105" pin="35"/>
+    </net>
+    <net code="54" name="/MOSI">
+      <node ref="U320" pin="8"/>
+      <node ref="U300" pin="8"/>
+      <node ref="U330" pin="8"/>
+      <node ref="U310" pin="8"/>
+      <node ref="R122" pin="1"/>
+      <node ref="P104" pin="4"/>
+    </net>
+    <net code="55" name="/Energieversorgung/24Vin">
+      <node ref="R27" pin="1"/>
+      <node ref="J120" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="56" name="Net-(P101-Pad1)">
+      <node ref="P101" pin="1"/>
+    </net>
+    <net code="57" name="/21">
+      <node ref="P105" pin="36"/>
+    </net>
+    <net code="58" name="/A1">
+      <node ref="P102" pin="2"/>
+    </net>
+    <net code="59" name="/A7">
+      <node ref="P102" pin="8"/>
+    </net>
+    <net code="60" name="/A6">
+      <node ref="P102" pin="7"/>
+    </net>
+    <net code="61" name="/A5">
+      <node ref="P102" pin="6"/>
+    </net>
+    <net code="62" name="/A4">
+      <node ref="P102" pin="5"/>
+    </net>
+    <net code="63" name="/A3">
+      <node ref="P102" pin="4"/>
+    </net>
+    <net code="64" name="/A2">
+      <node ref="P102" pin="3"/>
+    </net>
+    <net code="65" name="/A0">
+      <node ref="P102" pin="1"/>
+    </net>
+    <net code="66" name="GND">
+      <node ref="C327" pin="2"/>
+      <node ref="C334" pin="2"/>
+      <node ref="D323" pin="3"/>
+      <node ref="U320" pin="20"/>
+      <node ref="J311" pin="3"/>
+      <node ref="U320" pin="25"/>
+      <node ref="U320" pin="10"/>
+      <node ref="D322" pin="2"/>
+      <node ref="C326" pin="2"/>
+      <node ref="D324" pin="1"/>
+      <node ref="D332" pin="2"/>
+      <node ref="P104" pin="6"/>
+      <node ref="J121" pin="1"/>
+      <node ref="J122" pin="1"/>
+      <node ref="R316" pin="2"/>
+      <node ref="J332" pin="3"/>
+      <node ref="C331" pin="2"/>
+      <node ref="U330" pin="16"/>
+      <node ref="P105" pin="2"/>
+      <node ref="P105" pin="1"/>
+      <node ref="R314" pin="2"/>
+      <node ref="R306" pin="2"/>
+      <node ref="R308" pin="2"/>
+      <node ref="D302" pin="2"/>
+      <node ref="C306" pin="2"/>
+      <node ref="C307" pin="2"/>
+      <node ref="D303" pin="3"/>
+      <node ref="D304" pin="1"/>
+      <node ref="D314" pin="1"/>
+      <node ref="J331" pin="3"/>
+      <node ref="C336" pin="2"/>
+      <node ref="C337" pin="2"/>
+      <node ref="U330" pin="25"/>
+      <node ref="D333" pin="3"/>
+      <node ref="D334" pin="1"/>
+      <node ref="C316" pin="2"/>
+      <node ref="P101" pin="7"/>
+      <node ref="U330" pin="10"/>
+      <node ref="U330" pin="20"/>
+      <node ref="P101" pin="6"/>
+      <node ref="P106" pin="4"/>
+      <node ref="D313" pin="3"/>
+      <node ref="U320" pin="24"/>
+      <node ref="C317" pin="2"/>
+      <node ref="U310" pin="25"/>
+      <node ref="D28" pin="2"/>
+      <node ref="C314" pin="2"/>
+      <node ref="C313" pin="2"/>
+      <node ref="U300" pin="20"/>
+      <node ref="C312" pin="2"/>
+      <node ref="U310" pin="16"/>
+      <node ref="U310" pin="22"/>
+      <node ref="U310" pin="20"/>
+      <node ref="R26" pin="1"/>
+      <node ref="C333" pin="2"/>
+      <node ref="U10" pin="4"/>
+      <node ref="U10" pin="2"/>
+      <node ref="R310" pin="2"/>
+      <node ref="R312" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C311" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="J312" pin="3"/>
+      <node ref="R16" pin="2"/>
+      <node ref="D312" pin="2"/>
+      <node ref="U300" pin="24"/>
+      <node ref="U300" pin="10"/>
+      <node ref="C304" pin="2"/>
+      <node ref="C324" pin="2"/>
+      <node ref="C323" pin="2"/>
+      <node ref="J301" pin="3"/>
+      <node ref="J302" pin="3"/>
+      <node ref="C301" pin="2"/>
+      <node ref="C303" pin="2"/>
+      <node ref="R302" pin="2"/>
+      <node ref="R304" pin="2"/>
+      <node ref="C322" pin="2"/>
+      <node ref="U320" pin="16"/>
+      <node ref="C22" pin="2"/>
+      <node ref="J321" pin="3"/>
+      <node ref="J322" pin="3"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C321" pin="2"/>
+      <node ref="R28" pin="1"/>
+      <node ref="U300" pin="22"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C332" pin="2"/>
+      <node ref="U300" pin="25"/>
+      <node ref="U20" pin="4"/>
+      <node ref="U300" pin="16"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U310" pin="10"/>
+      <node ref="D21" pin="2"/>
+      <node ref="C302" pin="2"/>
+    </net>
+    <net code="67" name="/A10">
+      <node ref="P103" pin="3"/>
+    </net>
+    <net code="68" name="/CANTX">
+      <node ref="P103" pin="8"/>
+    </net>
+    <net code="69" name="/CANRX">
+      <node ref="P103" pin="7"/>
+    </net>
+    <net code="70" name="/DAC1">
+      <node ref="P103" pin="6"/>
+    </net>
+    <net code="71" name="/DAC0">
+      <node ref="P103" pin="5"/>
+    </net>
+    <net code="72" name="/A11">
+      <node ref="P103" pin="4"/>
+    </net>
+    <net code="73" name="/A9">
+      <node ref="P103" pin="2"/>
+    </net>
+    <net code="74" name="/A8">
+      <node ref="P103" pin="1"/>
+    </net>
+    <net code="75" name="/5V">
+      <node ref="C322" pin="1"/>
+      <node ref="U320" pin="2"/>
+      <node ref="U320" pin="1"/>
+      <node ref="U300" pin="1"/>
+      <node ref="U300" pin="2"/>
+      <node ref="C332" pin="1"/>
+      <node ref="U330" pin="2"/>
+      <node ref="C302" pin="1"/>
+      <node ref="C312" pin="1"/>
+      <node ref="U310" pin="2"/>
+      <node ref="U310" pin="1"/>
+      <node ref="U330" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="P101" pin="5"/>
+      <node ref="P104" pin="2"/>
+    </net>
+    <net code="76" name="/AREF">
+      <node ref="P106" pin="3"/>
+    </net>
+    <net code="77" name="/SDA">
+      <node ref="P106" pin="2"/>
+    </net>
+    <net code="78" name="/SCL">
+      <node ref="P106" pin="1"/>
+    </net>
+    <net code="79" name="/IO-Ref">
+      <node ref="U320" pin="22"/>
+      <node ref="C314" pin="1"/>
+      <node ref="U310" pin="9"/>
+      <node ref="U320" pin="9"/>
+      <node ref="U320" pin="11"/>
+      <node ref="C304" pin="1"/>
+      <node ref="C324" pin="1"/>
+      <node ref="U310" pin="11"/>
+      <node ref="U310" pin="24"/>
+      <node ref="U300" pin="9"/>
+      <node ref="U330" pin="11"/>
+      <node ref="U330" pin="9"/>
+      <node ref="P101" pin="2"/>
+      <node ref="C334" pin="1"/>
+      <node ref="U330" pin="22"/>
+      <node ref="U330" pin="24"/>
+      <node ref="U300" pin="11"/>
+    </net>
+    <net code="80" name="/Vin">
+      <node ref="P101" pin="8"/>
+    </net>
+    <net code="81" name="Net-(C11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="L12" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="82" name="Net-(L11-Pad1)">
+      <node ref="L11" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U10" pin="7"/>
+    </net>
+    <net code="83" name="Net-(R11-Pad2)">
+      <node ref="R11" pin="2"/>
+      <node ref="U10" pin="8"/>
+    </net>
+    <net code="84" name="Net-(D11-Pad2)">
+      <node ref="U10" pin="1"/>
+      <node ref="D11" pin="2"/>
+      <node ref="L11" pin="2"/>
+    </net>
+    <net code="85" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="U10" pin="3"/>
+    </net>
+    <net code="86" name="Net-(C21-Pad1)">
+      <node ref="C21" pin="1"/>
+      <node ref="L21" pin="2"/>
+      <node ref="R25" pin="2"/>
+      <node ref="L22" pin="1"/>
+      <node ref="Q28" pin="2"/>
+    </net>
+    <net code="87" name="Net-(D28-Pad1)">
+      <node ref="Q18" pin="1"/>
+      <node ref="Q28" pin="1"/>
+      <node ref="D28" pin="1"/>
+      <node ref="R28" pin="2"/>
+      <node ref="R27" pin="2"/>
+    </net>
+    <net code="88" name="Net-(C20-Pad1)">
+      <node ref="U20" pin="3"/>
+      <node ref="C20" pin="1"/>
+    </net>
+    <net code="89" name="Net-(D21-Pad1)">
+      <node ref="U20" pin="2"/>
+      <node ref="L21" pin="1"/>
+      <node ref="D21" pin="1"/>
+    </net>
+    <net code="90" name="Net-(R20-Pad1)">
+      <node ref="U20" pin="7"/>
+      <node ref="U20" pin="8"/>
+      <node ref="R20" pin="1"/>
+      <node ref="U20" pin="1"/>
+    </net>
+    <net code="91" name="Net-(U201-Pad1)">
+      <node ref="U201" pin="1"/>
+    </net>
+    <net code="92" name="Net-(U201-Pad2)">
+      <node ref="U201" pin="2"/>
+    </net>
+    <net code="93" name="Net-(U201-Pad3)">
+      <node ref="U201" pin="3"/>
+    </net>
+    <net code="94" name="Net-(U201-Pad4)">
+      <node ref="U201" pin="4"/>
+    </net>
+    <net code="95" name="Net-(U201-Pad5)">
+      <node ref="U201" pin="5"/>
+    </net>
+    <net code="96" name="Net-(U201-Pad6)">
+      <node ref="U201" pin="6"/>
+    </net>
+    <net code="97" name="Net-(U201-PadTP)">
+      <node ref="U201" pin="TP"/>
+    </net>
+    <net code="98" name="Net-(Q28-Pad3)">
+      <node ref="Q28" pin="3"/>
+      <node ref="R26" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="U20" pin="5"/>
+    </net>
+    <net code="99" name="Net-(Q18-Pad2)">
+      <node ref="Q18" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="U10" pin="5"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="100" name="Net-(J20-Pad2)">
+      <node ref="U20" pin="6"/>
+      <node ref="J20" pin="2"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="101" name="Net-(J10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="U10" pin="6"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="102" name="/Energieversorgung/5Vint">
+      <node ref="J10" pin="1"/>
+      <node ref="Q18" pin="3"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C22" pin="1"/>
+      <node ref="L22" pin="2"/>
+    </net>
+    <net code="103" name="Net-(C323-Pad1)">
+      <node ref="U320" pin="3"/>
+      <node ref="C323" pin="1"/>
+    </net>
+    <net code="104" name="Net-(C313-Pad1)">
+      <node ref="U310" pin="3"/>
+      <node ref="C313" pin="1"/>
+    </net>
+    <net code="105" name="/IO-LinkMaster1/DI3">
+      <node ref="R307" pin="1"/>
+      <node ref="J321" pin="2"/>
+      <node ref="C327" pin="1"/>
+      <node ref="D324" pin="2"/>
+      <node ref="U320" pin="19"/>
+    </net>
+    <net code="106" name="/IO-LinkMaster1/DI1_h">
+      <node ref="J302" pin="1"/>
+      <node ref="R304" pin="1"/>
+      <node ref="R303" pin="2"/>
+    </net>
+    <net code="107" name="/IO-LinkMaster1/DI2_h">
+      <node ref="R312" pin="1"/>
+      <node ref="R311" pin="2"/>
+      <node ref="J312" pin="1"/>
+    </net>
+    <net code="108" name="/IO-LinkMaster1/QC2_h">
+      <node ref="R309" pin="2"/>
+      <node ref="R310" pin="1"/>
+      <node ref="J312" pin="2"/>
+    </net>
+    <net code="109" name="/IO-LinkMaster1/DI3_h">
+      <node ref="J322" pin="1"/>
+      <node ref="R308" pin="1"/>
+      <node ref="R307" pin="2"/>
+    </net>
+    <net code="110" name="/IO-LinkMaster1/CQ3_h">
+      <node ref="R306" pin="1"/>
+      <node ref="R305" pin="2"/>
+      <node ref="J322" pin="2"/>
+    </net>
+    <net code="111" name="Net-(C303-Pad1)">
+      <node ref="C303" pin="1"/>
+      <node ref="U300" pin="3"/>
+    </net>
+    <net code="112" name="/IO-LinkMaster1/DI1">
+      <node ref="C307" pin="1"/>
+      <node ref="R303" pin="1"/>
+      <node ref="J301" pin="2"/>
+      <node ref="U300" pin="19"/>
+      <node ref="D304" pin="2"/>
+    </net>
+    <net code="113" name="/IO-LinkMaster1/CQ1_h">
+      <node ref="J302" pin="2"/>
+      <node ref="R302" pin="1"/>
+      <node ref="R301" pin="2"/>
+    </net>
+    <net code="114" name="/IO-LinkMaster1/QC1">
+      <node ref="C306" pin="1"/>
+      <node ref="C305" pin="2"/>
+      <node ref="D301" pin="2"/>
+      <node ref="D302" pin="1"/>
+      <node ref="U300" pin="21"/>
+      <node ref="R301" pin="1"/>
+      <node ref="J301" pin="4"/>
+    </net>
+    <net code="115" name="/IO-LinkMaster1/QC3">
+      <node ref="D321" pin="2"/>
+      <node ref="J321" pin="4"/>
+      <node ref="U320" pin="21"/>
+      <node ref="R305" pin="1"/>
+      <node ref="D322" pin="1"/>
+      <node ref="C325" pin="2"/>
+      <node ref="C326" pin="1"/>
+    </net>
+    <net code="116" name="/IO-LinkMaster1/QC4">
+      <node ref="D332" pin="1"/>
+      <node ref="D331" pin="2"/>
+      <node ref="C336" pin="1"/>
+      <node ref="U330" pin="21"/>
+      <node ref="R313" pin="1"/>
+      <node ref="J331" pin="4"/>
+      <node ref="C335" pin="2"/>
+    </net>
+    <net code="117" name="Net-(J301-Pad5)">
+      <node ref="J301" pin="5"/>
+    </net>
+    <net code="118" name="Net-(D304-Pad3)">
+      <node ref="D304" pin="3"/>
+    </net>
+    <net code="119" name="Net-(J321-Pad5)">
+      <node ref="J321" pin="5"/>
+    </net>
+    <net code="120" name="Net-(D324-Pad3)">
+      <node ref="D324" pin="3"/>
+    </net>
+    <net code="121" name="Net-(J311-Pad5)">
+      <node ref="J311" pin="5"/>
+    </net>
+    <net code="122" name="Net-(D314-Pad3)">
+      <node ref="D314" pin="3"/>
+    </net>
+    <net code="123" name="Net-(J331-Pad5)">
+      <node ref="J331" pin="5"/>
+    </net>
+    <net code="124" name="Net-(D334-Pad3)">
+      <node ref="D334" pin="3"/>
+    </net>
+    <net code="125" name="/IO-LinkMaster1/QC2">
+      <node ref="D312" pin="1"/>
+      <node ref="R309" pin="1"/>
+      <node ref="C315" pin="2"/>
+      <node ref="D311" pin="2"/>
+      <node ref="U310" pin="21"/>
+      <node ref="J311" pin="4"/>
+      <node ref="C316" pin="1"/>
+    </net>
+    <net code="126" name="/IO-LinkMaster1/DI2">
+      <node ref="R311" pin="1"/>
+      <node ref="C317" pin="1"/>
+      <node ref="U310" pin="19"/>
+      <node ref="D314" pin="2"/>
+      <node ref="J311" pin="2"/>
+    </net>
+    <net code="127" name="/IO-LinkMaster1/DI4_h">
+      <node ref="R315" pin="2"/>
+      <node ref="R316" pin="1"/>
+      <node ref="J332" pin="1"/>
+    </net>
+    <net code="128" name="/IO-LinkMaster1/CQ4_h">
+      <node ref="J332" pin="2"/>
+      <node ref="R313" pin="2"/>
+      <node ref="R314" pin="1"/>
+    </net>
+    <net code="129" name="/IO-LinkMaster1/DI4">
+      <node ref="J331" pin="2"/>
+      <node ref="D334" pin="2"/>
+      <node ref="C337" pin="1"/>
+      <node ref="U330" pin="19"/>
+      <node ref="R315" pin="1"/>
+    </net>
+    <net code="130" name="Net-(C333-Pad1)">
+      <node ref="C333" pin="1"/>
+      <node ref="U330" pin="3"/>
+    </net>
+    <net code="131" name="/26">
+      <node ref="U320" pin="15"/>
+      <node ref="P105" pin="29"/>
+    </net>
+    <net code="132" name="/27">
+      <node ref="U320" pin="17"/>
+      <node ref="P105" pin="30"/>
+    </net>
+    <net code="133" name="/28">
+      <node ref="P105" pin="27"/>
+      <node ref="U320" pin="18"/>
+    </net>
+    <net code="134" name="/3(**)">
+      <node ref="U320" pin="4"/>
+      <node ref="P107" pin="5"/>
+    </net>
+    <net code="135" name="/16(Tx2)">
+      <node ref="U320" pin="12"/>
+      <node ref="P108" pin="3"/>
+    </net>
+    <net code="136" name="/SCK">
+      <node ref="U300" pin="5"/>
+      <node ref="U310" pin="5"/>
+      <node ref="R120" pin="1"/>
+      <node ref="U320" pin="5"/>
+      <node ref="P104" pin="3"/>
+      <node ref="U330" pin="5"/>
+    </net>
+    <net code="137" name="/10(**)">
+      <node ref="P106" pin="8"/>
+      <node ref="U330" pin="6"/>
+      <node ref="U300" pin="6"/>
+      <node ref="U320" pin="6"/>
+      <node ref="U310" pin="6"/>
+    </net>
+    <net code="138" name="/MISO">
+      <node ref="U310" pin="7"/>
+      <node ref="U300" pin="7"/>
+      <node ref="R121" pin="1"/>
+      <node ref="U330" pin="7"/>
+      <node ref="P104" pin="1"/>
+      <node ref="U320" pin="7"/>
+    </net>
+  </nets>
+</export>

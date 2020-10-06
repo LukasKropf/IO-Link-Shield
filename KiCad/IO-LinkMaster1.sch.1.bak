@@ -1,0 +1,636 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:maxim
+LIBS:ESD_Protection
+LIBS:mechanical
+LIBS:myLib
+LIBS:dc-dc
+LIBS:diode
+LIBS:KiCad-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 3 3
+Title "Arduino IO-Link Master Shield"
+Date "2017-11-19"
+Rev ""
+Comp "BFH-Ti Burgdorf"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L M12-5 J310
+U 1 1 59F7A090
+P 7250 2550
+F 0 "J310" H 6890 2980 60  0000 C CNN
+F 1 "M12-5" H 7000 2900 60  0000 C CNN
+F 2 "EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180" H 7250 2550 60  0001 C CNN
+F 3 "https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf" H 7250 2550 60  0001 C CNN
+F 4 "Phoenix Contact" H 7250 2550 60  0001 C CNN "manf"
+F 5 "1694237" H 7250 2550 60  0001 C CNN "part-num"
+	1    7250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J311
+U 1 1 59F7A4A1
+P 7450 3400
+F 0 "J311" H 7450 3600 50  0000 C CNN
+F 1 "Conn_01x03" H 7450 3200 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 7450 3400 50  0001 C CNN
+F 3 "" H 7450 3400 50  0001 C CNN
+F 4 "Sullins Connector Solutions" H 7450 3400 60  0001 C CNN "manf"
+F 5 "PPPC031LFBN-RC" H 7450 3400 60  0001 C CNN "part-num"
+	1    7450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C310
+U 1 1 5A085864
+P 950 2450
+F 0 "C310" H 975 2550 50  0000 L CNN
+F 1 "1µF" H 975 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 988 2300 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-224/LTST-C191KSKT.PDF" H 950 2450 50  0001 C CNN
+F 4 "Knowles Syfer" H 950 2450 60  0001 C CNN "manf"
+F 5 "1206J0630104MXT" H 950 2450 60  0001 C CNN "part-num"
+	1    950  2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 5A08B2FB
+P 6600 3800
+F 0 "#PWR025" H 6600 3550 50  0001 C CNN
+F 1 "GND" H 6600 3650 50  0000 C CNN
+F 2 "" H 6600 3800 50  0001 C CNN
+F 3 "" H 6600 3800 50  0001 C CNN
+	1    6600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R311
+U 1 1 5A08B82B
+P 6400 3100
+F 0 "R311" V 6480 3100 50  0000 C CNN
+F 1 "100k" V 6400 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6330 3100 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/RC1206FR-07100KL/311-100KFRCT-ND/731439" H 6400 3100 50  0001 C CNN
+F 4 "Yageo" H 6400 3100 60  0001 C CNN "manf"
+F 5 "RC0805FR-07100KL" H 6400 3100 60  0001 C CNN "part-num"
+	1    6400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 5A08B839
+P 6400 3800
+F 0 "#PWR026" H 6400 3550 50  0001 C CNN
+F 1 "GND" H 6400 3650 50  0000 C CNN
+F 2 "" H 6400 3800 50  0001 C CNN
+F 3 "" H 6400 3800 50  0001 C CNN
+	1    6400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R313
+U 1 1 5A0B5267
+P 6600 3100
+F 0 "R313" V 6680 3100 50  0000 C CNN
+F 1 "100k" V 6600 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6530 3100 50  0001 C CNN
+F 3 "" H 6600 3100 50  0001 C CNN
+F 4 "Yageo" H 6600 3100 60  0001 C CNN "manf"
+F 5 "RC0805FR-07100KL" H 6600 3100 60  0001 C CNN "part-num"
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R312
+U 1 1 5A0B5C30
+P 6400 3600
+F 0 "R312" V 6480 3600 50  0000 C CNN
+F 1 "26k1" V 6400 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6330 3600 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/RC1206FR-073R01L/311-3.01FRCT-ND/731700" H 6400 3600 50  0001 C CNN
+F 4 "Yageo" H 6400 3600 60  0001 C CNN "manf"
+F 5 "RC0805FR-073K01L" H 6400 3600 60  0001 C CNN "part-num"
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R314
+U 1 1 5A0B92F6
+P 6600 3600
+F 0 "R314" V 6680 3600 50  0000 C CNN
+F 1 "26k1" V 6600 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6530 3600 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/yageo/RC1206FR-073R01L/311-3.01FRCT-ND/731700" H 6600 3600 50  0001 C CNN
+F 4 "Yageo" H 6600 3600 60  0001 C CNN "manf"
+F 5 "RC0805FR-073K01L" H 6600 3600 60  0001 C CNN "part-num"
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 5A14A0CB
+P 4000 3600
+F 0 "#PWR027" H 4000 3350 50  0001 C CNN
+F 1 "GND" H 4000 3450 50  0000 C CNN
+F 2 "" H 4000 3600 50  0001 C CNN
+F 3 "" H 4000 3600 50  0001 C CNN
+	1    4000 3600
+	-1   0    0    -1  
+$EndComp
+Text HLabel 1000 650  0    60   Input ~ 0
+IO-Ref
+Text Label 1350 650  2    60   ~ 0
+IO-Ref
+Text HLabel 1000 750  0    60   Input ~ 0
+24V
+Text HLabel 1000 850  0    60   Input ~ 0
+5V
+Text Label 1350 750  2    60   ~ 0
+24V
+Text Label 1350 850  2    60   ~ 0
+5V
+Text Label 1750 1400 0    60   ~ 0
+24V
+Text Label 1800 2250 0    60   ~ 0
+IO-Ref
+Text HLabel 1700 3000 0    59   Input ~ 0
+MA[0..7]
+Text Label 2100 2900 1    59   ~ 0
+MA[0..7]
+NoConn ~ 6850 2550
+Text Notes 3450 3850 0    59   ~ 0
+Adr. 0
+$Comp
+L MAX14824GTG+ U310
+U 1 1 5A1CC9F1
+P 3200 3000
+F 0 "U310" H 3250 4350 60  0000 C CNN
+F 1 "MAX14824GTG+" H 3250 4250 60  0000 C CNN
+F 2 "21-0139I_T2444-4" H 3100 4800 60  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14824.pdf" H 2450 4700 60  0001 C CNN
+F 4 "MAX14824GTG+" H 3250 4500 59  0001 C CNN "part-num"
+F 5 "Maxim Integrated" H 3200 4600 59  0001 C CNN "manf"
+	1    3200 3000
+	1    0    0    -1  
+$EndComp
+Text Label 2000 3500 1    59   ~ 0
+SPI[0..3]
+Entry Wire Line
+	2000 3250 2100 3350
+Entry Wire Line
+	2000 3350 2100 3450
+Entry Wire Line
+	2000 3450 2100 3550
+Entry Wire Line
+	2000 3550 2100 3650
+Text HLabel 1700 3550 0    59   Input ~ 0
+SPI[0..3]
+Entry Wire Line
+	2100 2450 2200 2550
+Entry Wire Line
+	2100 2550 2200 2650
+Entry Wire Line
+	2100 2650 2200 2750
+Entry Wire Line
+	2100 2750 2200 2850
+Entry Wire Line
+	2100 2850 2200 2950
+Entry Wire Line
+	2100 2950 2200 3050
+Entry Wire Line
+	2100 3050 2200 3150
+$Comp
+L C C311
+U 1 1 5A1E1128
+P 1250 2450
+F 0 "C311" H 1275 2550 50  0000 L CNN
+F 1 "0.1µF" H 1275 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1288 2300 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-224/LTST-C191KSKT.PDF" H 1250 2450 50  0001 C CNN
+F 4 "Knowles Syfer" H 1250 2450 60  0001 C CNN "manf"
+F 5 "1206J0630104MXT" H 1250 2450 60  0001 C CNN "part-num"
+	1    1250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C312
+U 1 1 5A1E37EC
+P 1500 2450
+F 0 "C312" H 1525 2550 50  0000 L CNN
+F 1 "1µF" H 1525 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1538 2300 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-224/LTST-C191KSKT.PDF" H 1500 2450 50  0001 C CNN
+F 4 "Knowles Syfer" H 1500 2450 60  0001 C CNN "manf"
+F 5 "1206J0630104MXT" H 1500 2450 60  0001 C CNN "part-num"
+	1    1500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C313
+U 1 1 5A1E3895
+P 1750 2450
+F 0 "C313" H 1775 2550 50  0000 L CNN
+F 1 "0.1µF" H 1775 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1788 2300 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-224/LTST-C191KSKT.PDF" H 1750 2450 50  0001 C CNN
+F 4 "Knowles Syfer" H 1750 2450 60  0001 C CNN "manf"
+F 5 "1206J0630104MXT" H 1750 2450 60  0001 C CNN "part-num"
+	1    1750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 5A1E423D
+P 1500 2650
+F 0 "#PWR028" H 1500 2400 50  0001 C CNN
+F 1 "GND" H 1500 2500 50  0000 C CNN
+F 2 "" H 1500 2650 50  0001 C CNN
+F 3 "" H 1500 2650 50  0001 C CNN
+	1    1500 2650
+	1    0    0    -1  
+$EndComp
+Text Label 1900 1950 2    60   ~ 0
+5V
+Text Label 2200 2550 0    59   ~ 0
+MA0
+Text Label 2200 2650 0    59   ~ 0
+MA1
+Text Label 2200 2750 0    59   ~ 0
+MA2
+Text Label 2200 2850 0    59   ~ 0
+MA3
+Text Label 2200 2950 0    59   ~ 0
+MA4
+Text Label 2200 3050 0    59   ~ 0
+MA5
+Text Label 2200 3150 0    59   ~ 0
+MA6
+Text Label 2150 3350 0    59   ~ 0
+SPI0
+Text Label 2150 3450 0    59   ~ 0
+SPI1
+Text Label 2150 3550 0    59   ~ 0
+SPI2
+Text Label 2150 3650 0    59   ~ 0
+SPI3
+$Comp
+L D_Schottky D314
+U 1 1 5A200022
+P 4400 1850
+F 0 "D314" H 4400 1950 50  0000 C CNN
+F 1 "D_Schottky" H 4400 1750 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 4400 1850 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF" H 4400 1850 50  0001 C CNN
+F 4 "NRVTS245ESFT1G" H 4400 1850 60  0001 C CNN "part-num"
+F 5 "ON Semiconductor" H 4400 1850 60  0001 C CNN "manf"
+	1    4400 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D315
+U 1 1 5A200335
+P 4400 3400
+F 0 "D315" H 4400 3500 50  0000 C CNN
+F 1 "D_Schottky" H 4400 3300 50  0000 C CNN
+F 2 "" H 4400 3400 50  0001 C CNN
+F 3 "" H 4400 3400 50  0001 C CNN
+	1    4400 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L C C314
+U 1 1 5A200D35
+P 4650 1850
+F 0 "C314" H 4675 1950 50  0000 L CNN
+F 1 "270p" H 4675 1750 50  0000 L CNN
+F 2 "" H 4688 1700 50  0001 C CNN
+F 3 "" H 4650 1850 50  0001 C CNN
+F 4 "Hersteller Nummer" H 4650 1850 60  0001 C CNN "part-num"
+F 5 "Hersteller" H 4650 1850 60  0001 C CNN "manf"
+	1    4650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C315
+U 1 1 5A200DB7
+P 4650 3400
+F 0 "C315" H 4675 3500 50  0000 L CNN
+F 1 "270pF" H 4675 3300 50  0000 L CNN
+F 2 "" H 4688 3250 50  0001 C CNN
+F 3 "" H 4650 3400 50  0001 C CNN
+F 4 "Hersteller Nummer" H 4650 3400 60  0001 C CNN "part-num"
+F 5 "Hersteller" H 4650 3400 60  0001 C CNN "manf"
+	1    4650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 5A201BC7
+P 4400 3800
+F 0 "#PWR029" H 4400 3550 50  0001 C CNN
+F 1 "GND" H 4400 3650 50  0000 C CNN
+F 2 "" H 4400 3800 50  0001 C CNN
+F 3 "" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 5A201BFB
+P 4650 3800
+F 0 "#PWR030" H 4650 3550 50  0001 C CNN
+F 1 "GND" H 4650 3650 50  0000 C CNN
+F 2 "" H 4650 3800 50  0001 C CNN
+F 3 "" H 4650 3800 50  0001 C CNN
+	1    4650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 5A202FE6
+P 5200 3800
+F 0 "#PWR031" H 5200 3550 50  0001 C CNN
+F 1 "GND" H 5200 3650 50  0000 C CNN
+F 2 "" H 5200 3800 50  0001 C CNN
+F 3 "" H 5200 3800 50  0001 C CNN
+	1    5200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C316
+U 1 1 5A206F53
+P 5900 3400
+F 0 "C316" H 5925 3500 50  0000 L CNN
+F 1 "1nF" H 5925 3300 50  0000 L CNN
+F 2 "" H 5938 3250 50  0001 C CNN
+F 3 "" H 5900 3400 50  0001 C CNN
+F 4 "Hersteller Nummer" H 5900 3400 60  0001 C CNN "part-num"
+F 5 "Hersteller" H 5900 3400 60  0001 C CNN "manf"
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 5A2070DE
+P 5900 3800
+F 0 "#PWR032" H 5900 3550 50  0001 C CNN
+F 1 "GND" H 5900 3650 50  0000 C CNN
+F 2 "" H 5900 3800 50  0001 C CNN
+F 3 "" H 5900 3800 50  0001 C CNN
+	1    5900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SP0502BAHT D310
+U 1 1 5A1CD9D4
+P 5400 1750
+F 0 "D310" H 5625 1850 50  0000 L CNN
+F 1 "SM36T1G" H 5625 1775 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5625 1700 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF" H 5525 1875 50  0001 C CNN
+F 4 "SM36T1G" H 5400 1750 60  0001 C CNN "part-num"
+F 5 "ON Semiconductor" H 5400 1750 60  0001 C CNN "manf"
+	1    5400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 5A1CE201
+P 5400 2000
+F 0 "#PWR033" H 5400 1750 50  0001 C CNN
+F 1 "GND" H 5400 1850 50  0000 C CNN
+F 2 "" H 5400 2000 50  0001 C CNN
+F 3 "" H 5400 2000 50  0001 C CNN
+	1    5400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SP0502BAHT D316
+U 1 1 5A1CF982
+P 5500 3300
+F 0 "D316" V 5700 3250 50  0000 L CNN
+F 1 "SM36T1G" V 5800 3200 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5725 3250 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF" H 5625 3425 50  0001 C CNN
+F 4 "SM36T1G" H 5500 3300 60  0001 C CNN "part-num"
+F 5 "ON Semiconductor" H 5500 3300 60  0001 C CNN "manf"
+	1    5500 3300
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5700 3300
+Wire Wire Line
+	950  1400 6600 1400
+Wire Wire Line
+	1000 650  1350 650 
+Wire Wire Line
+	6600 3300 7250 3300
+Wire Wire Line
+	6400 3750 6400 3800
+Wire Wire Line
+	6400 3250 6400 3450
+Wire Wire Line
+	6600 3750 6600 3800
+Wire Wire Line
+	6600 3250 6600 3450
+Wire Wire Line
+	1000 850  1350 850 
+Wire Wire Line
+	1000 750  1350 750 
+Wire Wire Line
+	1750 2250 2400 2250
+Wire Wire Line
+	6400 3400 7250 3400
+Connection ~ 6600 3300
+Connection ~ 6400 3400
+Wire Wire Line
+	4000 3200 3900 3200
+Wire Wire Line
+	4000 2700 4000 3600
+Wire Wire Line
+	3900 3300 4000 3300
+Connection ~ 4000 3300
+Wire Wire Line
+	3900 3400 4000 3400
+Connection ~ 4000 3400
+Wire Wire Line
+	3900 3500 4000 3500
+Connection ~ 4000 3500
+Wire Wire Line
+	4050 2300 4050 2400
+Wire Wire Line
+	4050 2400 3900 2400
+Wire Bus Line
+	2000 3150 2000 3550
+Wire Wire Line
+	2100 3450 2400 3450
+Wire Wire Line
+	2400 3350 2100 3350
+Wire Wire Line
+	2400 3550 2100 3550
+Wire Wire Line
+	2400 3650 2100 3650
+Wire Bus Line
+	2000 3550 1700 3550
+Wire Wire Line
+	2250 2350 2400 2350
+Wire Wire Line
+	2250 2350 2250 2250
+Connection ~ 2250 2250
+Wire Wire Line
+	2400 2050 2250 2050
+Wire Wire Line
+	2250 2050 2250 1950
+Wire Wire Line
+	1250 1950 2400 1950
+Connection ~ 2250 1950
+Wire Wire Line
+	1500 2150 2400 2150
+Wire Bus Line
+	2100 2450 2100 3050
+Wire Wire Line
+	2400 2550 2200 2550
+Wire Wire Line
+	2400 2650 2200 2650
+Wire Wire Line
+	2200 2750 2400 2750
+Wire Wire Line
+	2400 2850 2200 2850
+Wire Wire Line
+	2200 2950 2400 2950
+Wire Wire Line
+	2400 3050 2200 3050
+Wire Wire Line
+	2400 3150 2200 3150
+Wire Bus Line
+	2100 3000 1700 3000
+Wire Wire Line
+	1250 2300 1250 1950
+Wire Wire Line
+	1250 2600 1250 2650
+Wire Wire Line
+	950  2650 1750 2650
+Wire Wire Line
+	1500 2600 1500 2650
+Wire Wire Line
+	1750 2650 1750 2600
+Connection ~ 1500 2650
+Wire Wire Line
+	1500 2150 1500 2300
+Wire Wire Line
+	1750 2250 1750 2300
+Wire Wire Line
+	3900 3000 4000 3000
+Connection ~ 4000 3200
+Connection ~ 4000 3000
+Connection ~ 4000 2700
+Wire Wire Line
+	6600 2400 6600 2950
+Connection ~ 6600 2400
+Wire Wire Line
+	7250 3500 6800 3500
+Wire Wire Line
+	6400 2800 6400 2950
+Connection ~ 6400 2800
+Wire Wire Line
+	4050 2300 6850 2300
+Wire Wire Line
+	3900 2700 6850 2700
+Wire Wire Line
+	6800 3500 6800 2700
+Connection ~ 6800 2700
+Wire Wire Line
+	4400 2000 4400 3250
+Connection ~ 4400 2400
+Wire Wire Line
+	4650 2000 4650 3250
+Connection ~ 4650 2400
+Wire Wire Line
+	4400 3550 4400 3800
+Wire Wire Line
+	4650 3800 4650 3550
+Wire Wire Line
+	4400 1400 4400 1700
+Wire Wire Line
+	4650 1400 4650 1700
+Connection ~ 4400 1400
+Connection ~ 4650 1400
+Wire Wire Line
+	5900 2800 5900 3250
+Connection ~ 5900 2800
+Wire Wire Line
+	5900 3550 5900 3800
+Wire Wire Line
+	4250 2400 6850 2400
+Wire Wire Line
+	4250 2400 4250 2600
+Wire Wire Line
+	4250 2600 3900 2600
+Wire Wire Line
+	4150 2800 6850 2800
+Wire Wire Line
+	4150 2800 4150 2500
+Wire Wire Line
+	4150 2500 3900 2500
+Wire Wire Line
+	6600 1400 6600 2300
+Connection ~ 6600 2300
+Wire Wire Line
+	5300 1400 5300 1550
+Connection ~ 5300 1400
+Wire Wire Line
+	5500 1400 5500 1550
+Connection ~ 5500 1400
+Connection ~ 5200 2800
+Wire Wire Line
+	5200 2800 5200 3200
+Wire Wire Line
+	5200 3200 5300 3200
+Wire Wire Line
+	5300 3400 5200 3400
+Wire Wire Line
+	5200 3400 5200 3800
+Wire Wire Line
+	950  1400 950  2300
+Connection ~ 6150 1400
+Wire Wire Line
+	5400 1950 5400 2000
+Wire Wire Line
+	950  2650 950  2600
+Connection ~ 1250 2650
+$EndSCHEMATC

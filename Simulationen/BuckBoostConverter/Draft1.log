@@ -1,0 +1,22 @@
+Circuit: * C:\Users\lukas\git\bte5511_kropl2\KiCad\Simulationen\BuckBoostConverter\Draft1.asc
+
+WARNING: Less than two connections to node NC_01.  This node is used by V1.
+.OP point found by inspection.
+
+Date: Sun Jan 14 15:55:03 2018
+Total elapsed time: 0.082 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2238
+traniter = 2238
+tranpoints = 1120
+accept = 1107
+rejected = 13
+matrix size = 2
+fillins = 0
+solver = Normal
+Matrix Compiler1: 18 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.1/0.0
+

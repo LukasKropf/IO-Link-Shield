@@ -1,0 +1,745 @@
+<html>
+<head>
+<style>
+body{
+    background-color: #ededed;
+    min-width: 842px;
+}
+#BOMInfoID {
+    padding: 15px;
+    display: inline-block;
+}
+#BOMInfoID strong {
+    float: left;
+    width: 250px;
+    padding: 5px;
+    padding-bottom: 15px;
+    min-height: 80px;
+    text-transform: uppercase;	
+}
+#BOMInfoID h1 {
+    font-size: 16px;
+    color: #444;
+    padding-left: 10px;
+    text-transform: initial;
+}
+hr{
+    padding: 0;
+    margin: 4;
+	
+}
+.group, .Header, .group_head{
+    width:100%;
+}
+.column, .Head{
+    float: left;
+    width: 135px;
+    height: auto;
+    text-align: center;
+    margin: 10px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+.HeadQtyTag{
+    width: 30px;
+}
+.partRow{
+    display: table;
+    font-size: 14px;
+     width: 100%;
+}
+.group .partRow:hover{
+    background-color: #ededed;
+}
+#TableId{
+    background-color: white;
+    width: 1300px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+}
+.footer, .Header{
+    padding:5px;
+    text-align: center;
+}
+.footer,
+.Header a,
+.group_title,
+.Head{
+    color: #444;
+    display: block;
+    font-size: 0.5em;
+    text-decoration: none;
+	
+}
+.Header a{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    float: left;
+    width: 50%;
+    margin: 15px;
+	text-align:left;
+}
+.Head{
+    font-size: 20px;
+}
+.group_title{
+    text-align: center;
+    font-size: 1.5em;
+}
+.group_C:after{
+    content:"Capacitors";
+}
+.group_D:after{
+    content:"Diodes";
+}
+.group_F:after{
+    content:"Fuse";
+}
+.group_J:after{
+    content:"Connectors";
+}
+.group_L:after{
+    content:"Inductors";
+}
+.group_P:after{
+    content:"Connectors";
+}
+.group_CN:after{
+    content:"Connectors";
+}
+.group_Q:after{
+    content:"Transistors";
+}
+.group_R:after{
+    content:"Resistors";
+}
+.group_U:after{
+    content:"Semiconductors";
+}
+.group_IC:after{
+    content:"Integrated Circuit";
+}
+.group_V:after{
+    content:"Varistors";
+}
+.group_X:after{
+    content:"Crystals";
+}
+.group .group_title{
+    color: #444;
+}
+/*image what convert to css uri at http://www.askapache.com/online-tools/base64-image-converter/*/
+#logo { 
+	background-image: url("data:image/jpeg;base64,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");
+    width: 300;
+    height: 140;
+    display: inline-block;
+    float: right;
+    margin-top: 45px;
+    margin-right: 120px;
+    background-size: contain;
+}
+</style>
+</head>
+<body>
+    <div id="main">
+        <div id="TableId">
+            <div class="Header">
+			<a href=""><h1>Arduino IO-Link Master Shield BOM <br>Rev 4</h1></a> <div id="logo"></div>
+			</div>
+            <div id="BOMInfoID">
+                <strong>Date<h1> 2017-12-07</h1></strong>
+                <strong>Company<h1> BFH-Ti Burgdorf, Kropl2</h1></strong>
+                <strong>Comment 1<h1> </h1></strong>
+                <strong>Comment 2<h1> </h1></strong>
+                <strong>Comment 3<h1> </h1></strong>
+                <strong>Comment 4<h1> </h1></strong>
+                <strong>Total Parts<h1> 113 (Unique 42)</h1></strong>
+            </div>
+
+            <div class="group_head"><div class="partRow"><div class='Head HeadRefTag'>Ref</div>
+<div class='Head HeadQtyTag'>Qty</div>
+<div class='Head HeadValueTag'>Value</div>
+<div class='Head HeadFootprintTag'>Footprint</div>
+<div class='Head HeadDatasheetTag'>Datasheet</div>
+<div class='Head '>manf</div>
+<div class='Head '>part-num</div>
+</div></div>
+            <hr>
+<div class="group group_title group_C">
+[C] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">C10 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">430pF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM2165C1H431JA01-01.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">KEMET</div>
+
+<div class="column FiledClass Field_part-num">C0805C431J5GAC7800</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">C11 C12 </div>
+    <div class="column HeadQtyTag">2</div>
+    <div class="column HeadValueTag">150µF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:CP_Elec_8x10.5</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/rubycon/35PEV150M8X10.5/35PEV150M8X10.5CT-ND/5777270">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Rubycon</div>
+
+<div class="column FiledClass Field_part-num">35PEV150M8X10.5</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">C20 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">120pF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/murata-electronics-north-america/GRM2165C1H121JA01D/490-9737-1-ND/4934913">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">MuRata</div>
+
+<div class="column FiledClass Field_part-num">GRM2165C1H121JA01D</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">C21 C22 </div>
+    <div class="column HeadQtyTag">2</div>
+    <div class="column HeadValueTag">120µF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:CP_Elec_6.3x5.7</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/nichicon/RSA1A121MCN1GS/493-7371-1-ND/3768638">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Nichicon</div>
+
+<div class="column FiledClass Field_part-num">RSA1A121MCN1GS</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">C301 C311 C321 C331 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">1µF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="http://katalog.we-online.de/pbs/datasheet/885012107003.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Wurth Electronics Inc.</div>
+
+<div class="column FiledClass Field_part-num">885012207103</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">C302 C312 C322 C332 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">220nF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="http://katalog.we-online.de/pbs/datasheet/885012207018.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Wurth Electronics Inc.</div>
+
+<div class="column FiledClass Field_part-num">885012207018</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">C303 C313 C323 C333 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">1µF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="http://katalog.we-online.de/pbs/datasheet/885012207022.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Wurth Electronics Inc.</div>
+
+<div class="column FiledClass Field_part-num">885012207022</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">C304 C314 C324 C334 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">100nF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="http://katalog.we-online.de/pbs/datasheet/885012207016.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Wurth Electronics Inc.</div>
+
+<div class="column FiledClass Field_part-num">885012207016</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">C305 C306 C315 C316 C325 C326 C335 C336 </div>
+    <div class="column HeadQtyTag">8</div>
+    <div class="column HeadValueTag">270pF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Murata Electronics North America</div>
+
+<div class="column FiledClass Field_part-num">GRM2165C1H271JA01D</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">C307 C317 C327 C337 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">1nF</div>
+    <div class="column HeadFootprintTag">Capacitors_SMD:C_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Murata Electronics North America</div>
+
+<div class="column FiledClass Field_part-num">GRM216R71H102KA01D</div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_D">
+[D] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">D1 D11 D21 </div>
+    <div class="column HeadQtyTag">3</div>
+    <div class="column HeadValueTag">D_Schottky</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:D_SMF_DO-219</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SL04-HE3-08/SL04-HE3-08CT-ND/3104495">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Vishay Semiconductor Diodes Division</div>
+
+<div class="column FiledClass Field_part-num">SL04-HE3-08</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">D28 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">D_10V</div>
+    <div class="column HeadFootprintTag">Diodes_SMD:D_SOD-123F</div>
+    <div class="column HeadDatasheetTag"><a href="http://assets.nexperia.com/documents/data-sheet/NZH_SER.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Nexperia USA Inc.</div>
+
+<div class="column FiledClass Field_part-num">NZH10C115</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">D301 D302 D311 D312 D321 D322 D331 D332 </div>
+    <div class="column HeadQtyTag">8</div>
+    <div class="column HeadValueTag">NTS245SFT1GOSCT-ND</div>
+    <div class="column HeadFootprintTag">Diodes_SMD:D_SOD-123F</div>
+    <div class="column HeadDatasheetTag"><a href="http://www.onsemi.com/pub/Collateral/NRVTS245ESF-D.PDF">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">ON Semiconductor</div>
+
+<div class="column FiledClass Field_part-num">NTS245SFT1GOSCT-ND</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">D303 D304 D313 D314 D323 D324 D333 D334 </div>
+    <div class="column HeadQtyTag">8</div>
+    <div class="column HeadValueTag">SM36T1G</div>
+    <div class="column HeadFootprintTag">TO_SOT_Packages_SMD:SOT-23</div>
+    <div class="column HeadDatasheetTag"><a href="http://www.onsemi.com/pub/Collateral/SM05T1-D.PDF">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">ON Semiconductor</div>
+
+<div class="column FiledClass Field_part-num">SM36T1G</div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_J">
+[J] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">J10 J20 </div>
+    <div class="column HeadQtyTag">2</div>
+    <div class="column HeadValueTag">Conn_01x02</div>
+    <div class="column HeadFootprintTag">Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</div>
+    <div class="column HeadDatasheetTag"><a href="">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Sullins Connector Solutions</div>
+
+<div class="column FiledClass Field_part-num">S1011EC-02-ND;SPC02SYAN</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">J120 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">MDm Banana</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:Banana_4mm_CT2230</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/cal-test-electronics/CT2230-2/BKCT2230-2-ND/5765413">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Cal Test Electronics</div>
+
+<div class="column FiledClass Field_part-num">CT2230-2</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">J121 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">MDm Banana</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:Banana_4mm_CT2230</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/cal-test-electronics/CT2230-0/BKCT2230-0-ND/5765412">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Cal Test Electronics</div>
+
+<div class="column FiledClass Field_part-num">CT2230-0</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">J122 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">TEST_1P</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:TestPoint_Keystone_5006_Black</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/keystone-electronics/5006/36-5006-ND/255330">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Keystone Electronics</div>
+
+<div class="column FiledClass Field_part-num">36-5006-ND</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">J301 J311 J321 J331 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">M12-5</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180</div>
+    <div class="column HeadDatasheetTag"><a href="https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Phoenix Contact</div>
+
+<div class="column FiledClass Field_part-num">1694237</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">J302 J312 J322 J332 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">Conn_01x03</div>
+    <div class="column HeadFootprintTag">Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</div>
+    <div class="column HeadDatasheetTag"><a href="http://sullinscorp.com/catalogs/101_PAGE114-115_.100_FEMALE_HDR.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Sullins Connector Solutions</div>
+
+<div class="column FiledClass Field_part-num">PPPC031LFBN-RC</div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_L">
+[L] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">L1 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">100µH</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:Murata_DG8040C</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/murata-electronics-north-america/1267AY-101M=P3/490-10826-1-ND/5271568">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Murata</div>
+
+<div class="column FiledClass Field_part-num">1267AY-101M=P3</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">L11 L21 </div>
+    <div class="column HeadQtyTag">2</div>
+    <div class="column HeadValueTag">47µH</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:SRN6045</div>
+    <div class="column HeadDatasheetTag"><a href="http://www.bourns.com/docs/Product-Datasheets/SRN6045.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Bourns inc</div>
+
+<div class="column FiledClass Field_part-num">SRN6045-470M</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">L12 L22 </div>
+    <div class="column HeadQtyTag">2</div>
+    <div class="column HeadValueTag">1µH</div>
+    <div class="column HeadFootprintTag">Inductors_SMD:L_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/murata-electronics-north-america/LQM21FN1R0N00D/490-4026-1-ND/1016286">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Murata</div>
+
+<div class="column FiledClass Field_part-num">LQM21FN1R0N00D</div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_P">
+[P] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">P101 P102 P103 P107 P108 </div>
+    <div class="column HeadQtyTag">5</div>
+    <div class="column HeadValueTag">Conn_01x08</div>
+    <div class="column HeadFootprintTag">Socket_Arduino_Mega:Socket_Strip_Arduino_1x08</div>
+    <div class="column HeadDatasheetTag"><a href="">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Sullins Connector Solutions</div>
+
+<div class="column FiledClass Field_part-num">S1011EC-08-ND</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">P104 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">SPI</div>
+    <div class="column HeadFootprintTag">Socket_Strips:Socket_Strip_Straight_2x03_Pitch2.54mm</div>
+    <div class="column HeadDatasheetTag"><a href="">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Sullins Connector Solutions</div>
+
+<div class="column FiledClass Field_part-num">S7106-ND</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">P105 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">Digital</div>
+    <div class="column HeadFootprintTag">Socket_Arduino_Mega:Socket_Strip_Arduino_2x18</div>
+    <div class="column HeadDatasheetTag"><a href="">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Sullins Connector Solutions</div>
+
+<div class="column FiledClass Field_part-num">S2211EC-18-ND</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">P106 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">PWM</div>
+    <div class="column HeadFootprintTag">Socket_Arduino_Mega:Socket_Strip_Arduino_1x10</div>
+    <div class="column HeadDatasheetTag"><a href="">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Sullins Connector Solutions</div>
+
+<div class="column FiledClass Field_part-num">S1011EC-10-ND</div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_Q">
+[Q] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">Q18 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">BSS138</div>
+    <div class="column HeadFootprintTag">TO_SOT_Packages_SMD:SOT-23</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/on-semiconductor/BSS138LT1G/BSS138LT1GOSCT-ND/917858">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Diodes Incorporated</div>
+
+<div class="column FiledClass Field_part-num">BSS138TA</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">Q28 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">BSS84</div>
+    <div class="column HeadFootprintTag">TO_SOT_Packages_SMD:SOT-23</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.diodes.com/assets/Datasheets/ds30149.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Diodes Incorporated</div>
+
+<div class="column FiledClass Field_part-num">BSS84-7-F</div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_R">
+[R] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">R10 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">0R330</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/RC1206JR-070RL/311-0.0ERCT-ND/732131">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RL0805FR-7W0R33L</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">R11 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">180</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/RC1206FR-07180RL/311-180FRCT-ND/731544">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-07180RL</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">R15 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">200k</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/products/de/resistors/chip-resistor-surface-mount/52?k=&pkeyword=&umin2085=200&umax2085=201&rfu2085=kOhms&FV=ffec1104%2Cfffc000d%2Cc0001%2C1c0002%2C400007%2Cffe00034&mnonly=0&ColumnSort=2085&page=1&stock=1&quantity=0&ptm=0&fid=0&pageSize=25">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-07200KL</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">R16 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">11k5</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/RC0805FR-0711K5L/311-11.5KCRCT-ND/730503">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-0711K5L</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">R20 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">0R25</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RL0805FR-070R25L</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">R25 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">200k</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-07200KL</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">R26 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">68k</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-0768KL</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">R27 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">100k</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-07100KL</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">R28 </div>
+    <div class="column HeadQtyTag">1</div>
+    <div class="column HeadValueTag">26k1</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="https://www.digikey.ch/product-detail/de/yageo/PT1206FR-070R25L/311-0.25ANCT-ND/2178376">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-0726K1L</div>
+
+</div>
+<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">R301 R303 R305 R307 R309 R311 R313 R315 </div>
+    <div class="column HeadQtyTag">8</div>
+    <div class="column HeadValueTag">100k</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-07100KL</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">R302 R304 R306 R308 R310 R312 R314 R316 </div>
+    <div class="column HeadQtyTag">8</div>
+    <div class="column HeadValueTag">16k2</div>
+    <div class="column HeadFootprintTag">Resistors_SMD:R_0805</div>
+    <div class="column HeadDatasheetTag"><a href="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Yageo</div>
+
+<div class="column FiledClass Field_part-num">RC0805FR-0716K2L</div>
+
+</div>
+
+</div>
+<hr>
+<div class="group group_title group_U">
+[U] -
+</div>
+<hr>
+<div class="group">
+	<div class="partRow RowOddTag">
+    <div class="column HeadRefTag">U10 U20 </div>
+    <div class="column HeadQtyTag">2</div>
+    <div class="column HeadValueTag">MC34063</div>
+    <div class="column HeadFootprintTag">SMD_Packages:SOIC-8-N</div>
+    <div class="column HeadDatasheetTag"><a href="http://www.st.com/content/ccc/resource/technical/document/datasheet/03/f9/c4/3d/7f/eb/4c/5e/CD00001232.pdf/files/CD00001232.pdf/jcr:content/translations/en.CD00001232.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">STMMicroelectronics</div>
+
+<div class="column FiledClass Field_part-num">MC34063ACD-TR</div>
+
+</div>
+<div class="partRow RowEvenTag">
+    <div class="column HeadRefTag">U300 U310 U320 U330 </div>
+    <div class="column HeadQtyTag">4</div>
+    <div class="column HeadValueTag">MAX14824GTG+</div>
+    <div class="column HeadFootprintTag">EigeneFootprints:QFN-24-1EP_4x4mm_Pitch0.5mm_Maxim</div>
+    <div class="column HeadDatasheetTag"><a href="http://datasheets.maximintegrated.com/en/ds/MAX14824.pdf">Datasheet</a></div>
+    
+<div class="column FiledClass Field_manf">Maxim Integrated</div>
+
+<div class="column FiledClass Field_part-num">MAX14824GTG+</div>
+
+</div>
+
+</div>
+
+			
+            <hr>
+
+            <div class="group footer"><h2>BOM made with <a href="https://github.com/HashDefineElectronics/KiCad_BOM_Wizard">KICAD_BOM_WIZARD</a>, PCB Layout made with <a href="http://kicad-pcb.org/">KiCad</a><br>(Generated 18.01.2018 23:10:56)</h2></div>
+        </div>
+    </div>
+</body>
+</html>
